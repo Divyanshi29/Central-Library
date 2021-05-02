@@ -10,6 +10,8 @@
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/> -->
+
   
 </head>
 <body>
@@ -176,7 +178,7 @@
         </div>
       </div>
       <div class="project">
-        <img src="image/searchBooks6.jpg" alt="" class="project-image" style="height: 27%;" />
+        <img src="image/searchBooks6.jpg" alt="" class="project-image"  />
         <div class="grid-overlay">
           <button
             onclick="window.location.href='Overlap.html';"
@@ -187,7 +189,7 @@
         </div>
       </div>
       <div class="project">
-        <img src="image/studyGroup1.png" alt="" class="project-image" style="height: 27%;" />
+        <img src="image/studyGroup1.png" alt="" class="project-image" style="width:20%"  />
         <div class="grid-overlay">
           <button
             onclick="window.location.href='Overlap.html';"
@@ -210,6 +212,38 @@
       </div>
     </section> 
 
+  <!-- Image carousal-->
+   <div class="carousel">
+      <div class="carousel-item">
+        <a href="https://www.google.com"><img src="image/1.jpg" alt="" /></a>
+        <p>National Digital Library</p>
+      </div>
+      <div class="carousel-item">
+         <a href="https://www.google.com">
+        <img src="image/2.jpg" alt="" /></a>
+        <p>JGate Library Consortium</p>
+      </div>
+      <div class="carousel-item">
+          <a href="https://www.google.com">
+        <img src="image/3.jpg" alt="" /></a>
+        <p>Institutional Digital Library<p>
+      </div>
+    </div>
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.carousel');
+        var instances = M.Carousel.init(elems, options);
+      });
+
+      // Or with jQuery
+
+      $(document).ready(function () {
+        $('.carousel').carousel();
+      });
+    </script>
     
 </body>
 </html>

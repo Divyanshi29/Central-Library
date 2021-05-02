@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+  </head>
+  <body>
+    <div class="carousel">
+      <div class="carousel-item">
+        <img src="image/1.jpg" alt="" />
+        <p>National Digital Library</p>
+      </div>
+      <div class="carousel-item">
+        <img src="image/2.jpg" alt="" />
+        <p>JGate Library Consortium</p>
+      </div>
+      <div class="carousel-item">
+        <img src="image/3.jpg" alt="" />
+        <p>Institutional Digital Library<p>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.carousel');
+        var instances = M.Carousel.init(elems, options);
+      });
+
+      // Or with jQuery
+
+      $(document).ready(function () {
+        $('.carousel').carousel();
+      });
+    </script>
+  </body>
+</html>
