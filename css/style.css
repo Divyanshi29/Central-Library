@@ -3,6 +3,8 @@ body {
   padding: 0px;
   background-color: #cfcfcf;
 }
+
+
 .logo {
   height: 150px;
   width: 120px;
@@ -11,119 +13,35 @@ body {
   height: 600px;
   width: 100%;
 }
-/* .carousel-inner img {
-  width: 100%;
-  height: 100%;
-} */
-
-/*.dropdown {
-  position: relative;
-  display: inline-block;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
 
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}*/
-/*
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  font-family: Arial;
-}
 
-/* Links inside the navbar 
-.navbarA {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}*/
-/* .slider-holder
-        {
-            width: 800px;
-            height: 400px;
-            background-color: yellow;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 0px;
-            text-align: center;
-            overflow: hidden;
-        }
-       
-        .image-holder
-        {
-            width: 2400px;
-            background-color: red;
-            height: 400px;
-            clear: both;
-            position: relative;
-           
-            -webkit-transition: left 2s;
-            -moz-transition: left 2s;
-            -o-transition: left 2s;
-            transition: left 2s;
-        }
-       
-        .slider-image
-        {
-            float: left;
-            margin: 0px;
-            padding: 0px;
-            position: relative;
-        }
-       
-        #slider-image-1:target ~ .image-holder
-        {
-            left: 0px;
-        }
-       
-        #slider-image-2:target ~ .image-holder
-        {
-            left: -800px;
-        }
-       
-        #slider-image-3:target ~ .image-holder
-        {
-            left: -1600px;
-        }
-       
-        .button-holder
-        {
-            position: relative;
-            top: -20px;
-        }
-       
-        .slider-change
-        {
-            display: inline-block;
-            height: 10px;
-            width: 10px;
-            border-radius: 5px;
-            background-color: brown;
-        } */
+
+
 
 button {
   cursor: pointer;
 }
+@keyframes slider {     
+  0% { left: 0; opacity: 0; }     
+  2% { opacity: 1; }     
+  20% { left: 0; opacity: 1; }     
+  21% { opacity: 0; }     
+  24% { opacity: 0; }     
+  25% { left: -768px; opacity: 1; }     
+  45% { left: -768px; opacity: 1; }     
+  46% { opacity: 0; }     
+  48% { opacity: 0; }     
+  50% { left: -1536px; opacity: 1; }     70% { left: -1536px; opacity: 1; }     72% { opacity: 0; }     
+  74% { opacity: 0; }    
+  75% { left: -2304px; opacity: 1; }   	
+  95% { left: -2304px; opacity: 1; }   	
+  97%  { left: -2304px; opacity: 0; }   	
+  100% { left: 0; opacity: 0; }
+} 
+
+
+
 
 #portfolio {
   width: 100%;
@@ -213,17 +131,22 @@ button {
   padding: 50px 10px 10px 10px;
 }
 /*********************************/
+* {
+        box-sizing: border-box
+      }
 .mySlides {
   display: none;
 }
 img {
   vertical-align: middle;
+height=100%;
+width=100%;
 }
-.slideshow-container {
-  position: relative;
-  height: 600px;
-  animation-name: initial;
-}
+ .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
 
 .prev,
 .next {
@@ -286,9 +209,9 @@ img {
 
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.2s;
+  -webkit-animation-duration: 1.5s;
   animation-name: fade;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
