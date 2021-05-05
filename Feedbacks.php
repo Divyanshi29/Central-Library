@@ -6,7 +6,7 @@ include("include/header.php");
 ?>
  <link rel="stylesheet" href="css/Stylesheet.css">
 <br><br><br>
-	<div id="form">	
+	<div id="form" style="margin-top:0px">	
 
 		<div class="col-md-12" id ="mainform">
 			<div class="col-sm-6">
