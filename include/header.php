@@ -35,7 +35,7 @@
 <li class="tabOuter" class="dropdown"><a class="borderOuter" class="dropdown-toggle" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a class="borderInner" href="#">Information</a></li>
-          <li><a class="borderInner" href="#">Feedback</a></li>
+          <li><a class="borderInner" href="feedbacks.php">Feedback</a></li>
           <li><a class="borderInner" href="#">Book Bank</a></li>
   <li><a href="#">Recommend a Book</a></li>
   
