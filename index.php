@@ -1,104 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Central Library</title>
 
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   	<link rel="stylesheet" type="text/css" href="css/style.css">
-<!--<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"> -->
-
-  <!-- <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script> -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/> -->
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
-</head>
-<body>
 
 <!-- header part -->
-    <header class="myhead">
-      <div class="container">
-        <div class="row head">
-          <div class="col-sm-5 head-text" style="text-align: left;">
-            <h2 style="color:white;">Central Library</h2> 
-            <h4 style="color:white;">National Institute of Technology, Jamshedpur</h4>
-          </div>
-           <div class="col-sm-1">
-            <img class="logo" src="image/logo.png">
-          </div>
-          <div class="col-sm-5 head-text" style="text-align:right">
-            <h2 style="color:white;">केंद्रीय पुस्तकालय</h2> 
-            <h4 style="color:white;">   राष्ट्रीय प्रौद्योगिकी संस्थान, जमशेदपुर</h4>
-          </div>
-        </div>
-      </div>
+
+    
+<?php
+
+include("include/main.php");
+include("include/header.php");
+//include("include/content.php");
+?>
 
 
-  <!--  nav part -->
-<nav  class="navbar navbar-inverse" data-spy="affix" data-offset-top="197" style="background-color:#030218; ">
- <div class="container-fluid container ">
+     <!-- Divyanshi's Code-->
 
-    <ul class="nav navbar-nav">
-      <li class="tabOuter" ><a class="borderOuter" href="#">Home</a></li>
-      <li class="tabOuter" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a class="borderInner" href="#">Library Team</a></li>
-          <li><a class="borderInner" href="#">Working Hours</a></li>
-          <li><a class="borderInner" href="#">Rules</a></li>
-  <li><a class="borderInner" href="#">Space</a></li>
-  <li><a class="borderInner" href="#">Acquistion and Processing Team</a></li>
-  <li><a href="#">Photo Gallery</a></li>
-        </ul>
-      </li>
-<li class="tabOuter" class="dropdown"><a class="borderOuter" class="dropdown-toggle" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a class="borderInner" href="#">Information</a></li>
-          <li><a class="borderInner" href="#">Feedback</a></li>
-          <li><a class="borderInner" href="#">Book Bank</a></li>
-  <li><a href="#">Recommend a Book</a></li>
-  
-        </ul>
-      </li>
-<li class="tabOuter" class="dropdown"><a class="borderOuter" class="dropdown-toggle" data-toggle="dropdown" href="#">Resources<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a class="borderInner" href="#">E-TextBooks</a></li>
-          <li><a class="borderInner" href="#">Online-Journals</a></li>
-          <li><a  href="#">Magazines</a></li>
-  
-        </ul>
-      </li>
-      </ul>
-      
-   <ul class="nav navbar-nav navbar-right">
-      <li class="tabOuter" class="dropdown"><a class="borderOuter" class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> Sign Up <span  class="caret"></span></a>
-          <ul class="dropdown-menu">
-          <li><a class="borderInner" href="#">Admin</a></li>
-          <li><a  href="#">Student</a></li>
-          </ul>
-          </li>
-          <li class="tabOuter" class="dropdown"><a class="borderOuter" class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-log-in"></span> Login <span  class="caret"></span></a>
-          <ul class="dropdown-menu">
-          <li><a class="borderInner" href="#">Admin</a></li>
-          <li><a  href="#">Student</a></li>
-          </ul>
-          </li>
-     <!--<li class="dropdown"><a  class="dropdown-toggle" data-toggle="dropdowm" href="#"><span class="glyphicon glyphicon-log-in" class="caret"></span> Login</a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Admin</a></li>
-          <li><a href="#">Student</a></li>
-          </ul>
-          </li>-->
-    </ul>
-  </div>
-</nav>
-</header>
-
-
-    <!-- Divyanshi's Code-->
 <section class="slide-image">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -108,7 +22,7 @@
       <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
 
-    <!-- Wrapper for slides -->
+     <!-- Wrapper for slides -->
     <div class="carousel-inner" >
       <div class="item active img-size">
         <img src="image/library.jpg" alt="Los Angeles" style="width:100%; height:100%">
@@ -123,7 +37,7 @@
       </div>
     </div>
 
-    <!-- Left and right controls -->
+ <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left"></span>
       <span class="sr-only">Previous</span>
@@ -135,35 +49,35 @@
   </div>
 </section>
 
-   <!-- <div id="demo" class="carousel slide" data-ride="carousel">
+    <!-- <div id="demo" class="carousel slide" data-ride="carousel">
 
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
+//   <ul class="carousel-indicators">
+//     <li data-target="#demo" data-slide-to="0" class="active"></li>
+//     <li data-target="#demo" data-slide-to="1"></li>
+//     <li data-target="#demo" data-slide-to="2"></li>
+//   </ul>
   
 
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="image/1.jpg" alt="Los Angeles" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="image/2.jpg" alt="Chicago" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="image/3.jpg" alt="New York" width="1100" height="500">
-    </div>
-  </div>
+//   <div class="carousel-inner">
+//     <div class="carousel-item active">
+//       <img src="image/1.jpg" alt="Los Angeles" width="1100" height="500">
+//     </div>
+//     <div class="carousel-item">
+//       <img src="image/2.jpg" alt="Chicago" width="1100" height="500">
+//     </div>
+//     <div class="carousel-item">
+//       <img src="image/3.jpg" alt="New York" width="1100" height="500">
+//     </div>
+//   </div>
   
 
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-</div>-->
+//   <a class="carousel-control-prev" href="#demo" data-slide="prev">
+//     <span class="carousel-control-prev-icon"></span>
+//   </a>
+//   <a class="carousel-control-next" href="#demo" data-slide="next">
+//     <span class="carousel-control-next-icon"></span>
+//   </a>
+// </div>-->
 
 
 
@@ -207,14 +121,6 @@
       </div>
       <marquee direction="up" scrollamount="4" onmouseover="this.stop()" onmouseout="this.start()" style="height:280px; cursor: pointer;">
         <ul>
-          <!-- <?php 
-            include('bpc/comman/connect.php');
-            $res=$con->query("select * from news order by(nid) desc");
-            while($row=mysqli_fetch_array($res))
-            {
-              echo "<li>".$row['news']."</li>";
-            }
-          ?> -->
           <li><a href="www.google.com">news1</a></li>
           <li><a href="www.google.com">news1</a></li>
           <li><a href="www.google.com">news1</a></li>
@@ -237,7 +143,7 @@
   </div>
 </section>
 
-    <!------------------------------------------------>
+    <!-- -------------------------------------------- -->
 <h1 style="text-align: center;margin-top:60px;margin-bottom: 60px;font-weight: bolder;font-family: 'Montserrat', sans-serif;">FACILITIES</h1>
      <section id="portfolio">
       <div class="project">
@@ -306,7 +212,7 @@
     </div>
     </div> -->
 
-  <!-- Image card-->
+  <!-- Image card -->
   <div class="card-parent">
   <div class="card">
 
@@ -458,8 +364,7 @@
 </div>
 
 <!-------Footer  start------->
-
-    <script>
+ <script>
         jQuery(document).ready(function($){
             $('.counter').counterUp({
             delay: 10,
@@ -484,5 +389,4 @@
         $('.carousel').carousel();
       });
     </script>
-</body>
-</html>
+    
