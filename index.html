@@ -14,7 +14,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/> -->
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -22,14 +23,16 @@
     <header class="myhead">
       <div class="container">
         <div class="row head">
-          <div class="col-sm-1">
-            <img class="logo" src="image/logo.png">
-          </div>
-          <div class="col-sm-5 head-text">
-            <h2 style="color:white;">Central Library</h2>
+          <div class="col-sm-5 head-text" style="text-align: left;">
+            <h2 style="color:white;">Central Library</h2> 
             <h4 style="color:white;">National Institute of Technology, Jamshedpur</h4>
           </div>
-          <div class="col-sm-5">
+           <div class="col-sm-2" style="text-align:right">
+            <img class="logo" src="image/logo.png">
+          </div>
+          <div class="col-sm-5 head-text" style="text-align:right">
+            <h2 style="color:white;">केंद्रीय पुस्तकालय</h2> 
+            <h4 style="color:white;">   राष्ट्रीय प्रौद्योगिकी संस्थान, जमशेदपुर</h4>
           </div>
         </div>
       </div>
@@ -37,41 +40,52 @@
 
   <!--  nav part -->
 <nav  class="navbar navbar-inverse" data-spy="affix" data-offset-top="197" style="background-color:#030218; ">
- <div class="container-fluid container">
+ <div class="container-fluid container ">
 
     <ul class="nav navbar-nav">
-      <li ><a href="#">Home</a></li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About<span class="caret"></span></a>
+      <li class="tabOuter" ><a class="borderOuter" href="#">Home</a></li>
+      <li class="tabOuter" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About<span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Library Team</a></li>
-          <li><a href="#">Working Hours</a></li>
-          <li><a href="#">Rules</a></li>
-  <li><a href="#">Space</a></li>
-  <li><a href="#">Acquistion and Processing Team</a></li>
+          <li><a class="borderInner" href="#">Library Team</a></li>
+          <li><a class="borderInner" href="#">Working Hours</a></li>
+          <li><a class="borderInner" href="#">Rules</a></li>
+  <li><a class="borderInner" href="#">Space</a></li>
+  <li><a class="borderInner" href="#">Acquistion and Processing Team</a></li>
   <li><a href="#">Photo Gallery</a></li>
         </ul>
       </li>
-<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
+<li class="tabOuter" class="dropdown"><a class="borderOuter" class="dropdown-toggle" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Information</a></li>
-          <li><a href="#">Feedback</a></li>
-          <li><a href="#">Book Bank</a></li>
+          <li><a class="borderInner" href="#">Information</a></li>
+          <li><a class="borderInner" href="#">Feedback</a></li>
+          <li><a class="borderInner" href="#">Book Bank</a></li>
   <li><a href="#">Recommend a Book</a></li>
   
         </ul>
       </li>
-<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources<span class="caret"></span></a>
+<li class="tabOuter" class="dropdown"><a class="borderOuter" class="dropdown-toggle" data-toggle="dropdown" href="#">Resources<span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">E-TextBooks</a></li>
-          <li><a href="#">Online-Journals</a></li>
-          <li><a href="#">Magazines</a></li>
+          <li><a class="borderInner" href="#">E-TextBooks</a></li>
+          <li><a class="borderInner" href="#">Online-Journals</a></li>
+          <li><a  href="#">Magazines</a></li>
   
         </ul>
       </li>
       </ul>
+      
    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li class="tabOuter" class="dropdown"><a class="borderOuter" class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> Sign Up <span  class="caret"></span></a>
+          <ul class="dropdown-menu">
+          <li><a class="borderInner" href="#">Admin</a></li>
+          <li><a  href="#">Student</a></li>
+          </ul>
+          </li>
+          <li class="tabOuter" class="dropdown"><a class="borderOuter" class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-log-in"></span> Login <span  class="caret"></span></a>
+          <ul class="dropdown-menu">
+          <li><a class="borderInner" href="#">Admin</a></li>
+          <li><a  href="#">Student</a></li>
+          </ul>
+          </li>
     </ul>
   </div>
 </nav>
@@ -89,17 +103,17 @@
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner">
+    <div class="carousel-inner" >
       <div class="item active img-size">
-        <img src="image/1.jpg" alt="Los Angeles" style="width:100%;">
+        <img src="image/library.jpg" alt="Los Angeles" style="width:100%; height:100%">
       </div>
 
       <div class="item img-size">
-        <img src="image/1.jpg" alt="Chicago" style="width:100%;">
+        <img src="image/4.jpg" alt="Chicago" style="width:100%;height:100%">
       </div>
     
       <div class="item img-size">
-        <img src="image/1.jpg" alt="New york" style="width:100%;">
+        <img src="image/3.jpg" alt="New york" style="width:100%;height:100%">
       </div>
     </div>
 
@@ -115,49 +129,17 @@
   </div>
 </section>
 
-   <!-- <div id="demo" class="carousel slide" data-ride="carousel">
-
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
-  
-
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="image/1.jpg" alt="Los Angeles" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="image/2.jpg" alt="Chicago" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="image/3.jpg" alt="New York" width="1100" height="500">
-    </div>
-  </div>
-  
-
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-</div>-->
-
-
-
-
+   
 
    <!---- Abhilasha code ------------->
     <section class="desc">
   <div class="container-fluid">
-    <div class="row" style="background-color: white;">
+    <div class="row" style="background-color: white; ">
       <div class="col-sm-3">
-        <div class="queck-link">
+        <div class="queck-link" style="box-shadow: 5px 5px 20px black;">
           <div class="queck-link_cap">
              <i class="fa fa-bell-o" aria-hidden="true"></i> 
-              EBOOK COLLECTION
+              Ebook Collection
           </div>
           <ul>
             <li><a href="www.google.com">IEEE (IEL ONLINE)</a></li>
@@ -169,23 +151,23 @@
         </div> 
       </div>
       <div class="col-sm-6">
-        <div class="queck-link">
+        <div class="queck-link" style="box-shadow: 5px 5px 20px black;">
           <div class="queck-link_cap">
              <i class="fa fa-bell-o" aria-hidden="true"></i> 
-             <b>Welcome To</b> Central Library<br><p style="font-size: 18px;padding-left: 5px;">National Institute of Technology, Jamshedpur</p>
+             <b>Welcome To Central Library</b><br>
           </div>
-          <p>
+          <p style="font-size: 16px;">
             National Institute of Technology, Jamshedpur takes extreme pride in the fact that it has been occupying a unique position in imparting technological education to Indian youth. Since its inception, the institute has had a vision to provide quality technical education and to facilitate scientific and technological research, coupled with a mission to develop human potential to its zenith.
           </p>
         </div> 
       </div>
     <div class="col-sm-3">
-    <div class="notification">
+    <div class="notification" style="box-shadow: 5px 5px 20px black;">
       <div class="notification_cap">
         <i class="fa fa-bell-o" aria-hidden="true"></i> 
-        Notifications
+        News & Announcements
       </div>
-      <marquee direction="up" scrollamount="4" onmouseover="this.stop()" onmouseout="this.start()" style="height:280px;">
+      <marquee direction="up" scrollamount="4" onmouseover="this.stop()" onmouseout="this.start()" style="height:280px; cursor: pointer;">
         <ul>
           <!-- <?php 
             include('bpc/comman/connect.php');
@@ -194,25 +176,21 @@
             {
               echo "<li>".$row['news']."</li>";
             }
-          ?> -->
-          <li>news1</li>
-          <li>news1</li>
-          <li>news1</li>
-          <li>news1</li>
-          <li>news1</li>
-          <li>news1</li>
-          <li>news1</li>
-          <li>news1</li>
-          <li>news1</li>
-          <li>news1</li>
-          <li>news1</li>
-          <li>news1</li>
-          <li>news1</li>
-          <li>news1</li>
-          <li>news1</li>
-          <li>news1</li>
-          <li>news1</li>
-          <li>news1</li>
+          ?>  -->
+          <li><a href="www.google.com">news1</a></li>
+          <li><a href="www.google.com">news1</a></li>
+          <li><a href="www.google.com">news1</a></li>
+          <li><a href="www.google.com">news1</a></li>
+          <li><a href="www.google.com">news1</a></li>
+          <li><a href="www.google.com">news1</a></li>
+          <li><a href="www.google.com">news1</a></li>
+          <li><a href="www.google.com">news1</a></li>
+          <li><a href="www.google.com">news1</a></li>
+          <li><a href="www.google.com">news1</a></li>
+          <li><a href="www.google.com">news1</a></li>
+          <li><a href="www.google.com">news1</a></li>
+          <li><a href="www.google.com">news1</a></li>
+          <li><a href="www.google.com">news1</a></li>
         </ul>
       </marquee>
     </div>
@@ -222,7 +200,7 @@
 </section>
 
     <!------------------------------------------------>
-<h1 style="margin-left: 20px;">Facilities</h1>
+<h1 style="text-align: center;margin-top:60px;margin-bottom: 60px;font-weight: bolder;font-family: 'Montserrat', sans-serif;">FACILITIES</h1>
      <section id="portfolio">
       <div class="project">
         <img src="image/libFine.jpg" alt="" class="project-image" />
@@ -236,7 +214,7 @@
         </div>
       </div>
       <div class="project">
-        <img src="image/searchBooks11.jpg" alt="" class="project-image" style="height: 29%;" />
+        <img src="image/searchBooks17.jpg" alt="" class="project-image" style="height:80%" />
         <div class="grid-overlay">
           <button
             onclick="window.location.href='Overlap.html';"
@@ -247,7 +225,7 @@
         </div>
       </div>
       <div class="project">
-        <img src="image/studyGroup2.png" alt="" class="project-image" style="height: 27%;width:24%" />
+        <img src="image/studyGroup2.png" alt="" class="project-image" style="height:80%" />
         <div class="grid-overlay">
           <button
             onclick="window.location.href='Overlap.html';"
@@ -270,10 +248,17 @@
       </div>
     </section> 
 
+<<<<<<< HEAD
   <!-- Image carousal-->
   <div >
    <div class="carousel" >
       <div class="carousel-item">
+=======
+  <!-- Image carousal
+   <div >
+   <div class="carousel carousel1" >
+      <div class="carousel-item carousel-item1">
+>>>>>>> master
         <a href="https://www.google.com"><img  style="border:3px solid red ;" src="image/1.jpg" alt="" /></a>
         <p style="text-align: center;font-weight: bold;">National Digital Library</p>
       </div>
@@ -288,12 +273,73 @@
         <p style="text-align: center;font-weight: bold;">Institutional Digital Repository<p>
       </div>
     </div>
-    </div>
+    </div> -->
+
+  <!-- Image card-->
+  <div class="card-parent">
+  <div class="card">
+
+  <!-- <div class="title">Standard</div> -->
+
+  <div class="icon">
+     <a href="https://www.google.com">
+    <img src="image/jgate.jpg" width="400px"/></a>
+    <!-- <svg enable-background="new 0 0 512 512" height="512px" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M468.493,101.637L371.955,5.098H159.57v77.231H43.724v424.769h308.923v-77.231h115.846V101.637z   M371.955,32.401l69.236,69.235h-69.236V32.401z M63.031,487.79V101.637h173.769v96.538h96.538V487.79H63.031z M256.108,109.632  l69.236,69.235h-69.236V109.632z M352.647,410.56V178.867l-96.538-96.538h-77.231V24.406h173.769v96.538h96.538V410.56H352.647z" fill="#37404D"/></svg> -->
+  </div><!--/icon-->
+
+  <div class="features">
+    <p>NATIONAL DIGITAL LIBRARY</p>
+  </div><!--/features-->
+
+  <!-- <a href="#" class="btn">Check it out</a> -->
+
+</div><!--/card-->
+
+<div class="card">
+
+  <!-- <div class="title">Expert</div> -->
+
+  <div class="icon">
+    <a href="https://www.google.com">
+    <img src="image/jgate3.jpg" width="400px" height="270px" /></a>
+    <!-- <svg enable-background="new 0 0 512 512" height="512px" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M285.928,113.067c62.492,0,113.327,50.827,113.327,113.327c0,0.344-0.041,0.705-0.066,1.049  c-0.049,0.836-0.107,1.672-0.123,2.525l-0.426,17.133l17.159,0.065c41.53,0.115,75.313,34.005,75.313,75.535  c0,41.415-33.718,75.305-75.157,75.518l-3.664,0.016H104.977c-46.244-0.049-83.872-37.693-83.872-83.929  c0-35.825,22.806-67.714,56.737-79.356l9.444-3.229l1.664-9.838c4.115-24.282,24.97-41.907,49.588-41.907  c7.846,0,15.428,1.82,22.536,5.394l15.306,7.689l7.386-15.444C202.531,138.398,242.635,113.067,285.928,113.067 M285.928,96.277  c-51.778,0-96.358,30.315-117.303,74.092c-9.059-4.558-19.256-7.182-30.086-7.182c-33.233,0-60.762,24.184-66.14,55.893  C32.82,232.657,4.316,270.104,4.316,314.307c0,55.597,45.063,100.669,100.644,100.718h311.084v-0.016  c50.777-0.263,91.856-41.481,91.856-92.308c0-50.909-41.177-92.177-92.053-92.324c0.033-1.344,0.197-2.639,0.197-3.984  C416.044,154.532,357.79,96.277,285.928,96.277L285.928,96.277z" fill="#37404D"/></svg> -->
+  </div><!--/icon-->
+
+  <div class="features">
+    <p>JGATE-NIT LIB. CONSORTIUM</p>
+  </div><!--/features-->
+
+  <!-- <a href="#" class="btn">Check it out</a> -->
+
+</div>
+
+<div class="card">
+
+  <!-- <div class="title">Elite</div> -->
+
+  <div class="icon">
+     <a href="https://www.google.com">
+    <img src="image/institutionalDigital1.jpg" width="400px" height="270px"/></a>
+    <!-- <svg enable-background="new 0 0 512 512" height="512px" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M316.01,199.02L256.134,14.817L196.239,199.02H1.134l158.102,113.324L98.53,496.487l157.604-114.232  l157.585,114.232l-60.687-184.143L511.134,199.02H316.01z M335.084,318.257l42.407,128.63L267.22,366.963l-11.086-8.033  l-11.086,8.033l-110.291,79.923l42.408-128.63l4.353-13.18l-11.289-8.08L59.903,217.909h136.336h13.724l4.242-13.051l41.929-128.957  l41.91,128.957l4.242,13.051h13.724h136.336l-110.327,79.088l-11.27,8.08L335.084,318.257z" fill="#37404D"/></svg> -->
+  </div><!--/icon-->
+
+  <div class="features">
+    
+    <p>INSTITUTIONAL DIGITAL REPOSITORY</p>
+  </div><!--/features-->
+
+  <!-- <a href="#" class="btn">Check it out</a> -->
+
+</div><!--/card-->
+</div>
+
+
     
 <!-------Counter start------->
-<div style="background-color:#696969">
-<div class="container-fluid counter-bg">
-	<div class="container counter-section">
+
+<section>
+  <div class="container-fluid counter-bg" style="background-color:#8c92ac">
+  <div class="container counter-section">
         <div class="row text-center">
             <div class="col-sm-3 counter-box">
                 <div class="icon-box">
@@ -325,62 +371,62 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 <!-------Counter end------->
 
 
+
+</div>
 <!-------Footer  start------->
 
-<div class="container-fluid footer">
+<div class="container-fluid footer" style="background-color:#8c92ac">
 <div class="container">
-	<div class="row">
-		<div class="col-sm-4 wow fadeInUp" data-wow-duration="3s">
-			<div class="footname">Site Map</div>
-			<a href="index"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Home</a><br>
-			<a href="about"><i class="fa fa-angle-double-right" aria-hidden="true"></i> About</a><br>
-			<a href="course"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Services</a><br>
-			<a href="gallery"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Resources</a><br>
-			<a href="contact"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Contact</a>
-		</div>
-		<div class="col-sm-4 wow fadeInUp" data-wow-duration="3s">
-			<div class="footname">Collaboration To</div>
-			<div style="opacity: .4;">
-				<img src="image/logo.png" class="logo">
-			</div>
-			
-		</div>
-		<div class="col-sm-4 wow fadeInUp" data-wow-duration="3s">
-			<div class="footname">Address</div>
-			<p>
-				<table style="color: #525252;">
-					<tr>
-						<td valign="top" style="padding-right:10px;"><i class="fa fa-map-marker" aria-hidden="true"></i></td>
-						<td>
-							National Institute of Technology,<br> Jamshedpur<br>
-							 Adityapur, Jamshedpur, Jharkhand<br> 831014
-						</td>
-					</tr>
-					<tr>
-						<td style="padding-right:10px;"><i class="fa fa-phone" aria-hidden="true"></i>
-						</td>
-						<td>+91 8507107839</td>
-					</tr>
-					<tr>
-						<td style="padding-right:10px;"><i class="fa fa-envelope" aria-hidden="true"></i></td>
-						<td style="text-transform:lowercase;">kapil.kr909@gmail.com</td>
-					</tr>
-				</table>
-			</p>
+  <div class="row">
+    <div class="col-sm-4 wow fadeInUp" data-wow-duration="3s">
+      <div style="color: rgb(48, 36, 36);" class="footname">Site Map</div>
+      <a style="color: rgb(48, 36, 36);" href="index"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Home</a><br>
+      <a style="color: rgb(48, 36, 36);" href="about"><i class="fa fa-angle-double-right" aria-hidden="true"></i> About</a><br>
+      <a style="color: rgb(48, 36, 36);" href="course"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Services</a><br>
+      <a style="color: rgb(48, 36, 36);" href="gallery"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Resources</a><br>
+      <a style="color: rgb(48, 36, 36);" href="contact"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Contact</a>
+    </div>
+    <div class="col-sm-4 wow fadeInUp" data-wow-duration="3s">
+      <div style="color: rgb(48, 36, 36);" class="footname">Collaboration To</div>
+      <div style="opacity: 1;">
+        <img src="image/logo.png" class="logo" style="  -webkit-filter: invert(100%); color:black; filter: invert(100%); margin-left: 90px;">
+      </div>
+      
+    </div>
+    <div class="col-sm-4 wow fadeInUp" data-wow-duration="3s">
+      <div style="color: rgb(48, 36, 36);" class="footname">Address</div>
+      <p>
+        <table style="color: rgb(48, 36, 36);">
+          <tr>
+            <td valign="top" style="padding-right:10px;"><i class="fa fa-map-marker" aria-hidden="true"></i></td>
+            <td>
+              National Institute of Technology,<br> Jamshedpur<br>
+               Adityapur, Jamshedpur, Jharkhand<br> 831014
+            </td>
+          </tr>
+          <tr>
+            <td style="padding-right:10px;"><i class="fa fa-phone" aria-hidden="true"></i>
+            </td>
+            <td>+91 8507107839</td>
+          </tr>
+          <tr>
+            <td style="padding-right:10px;"><i class="fa fa-envelope" aria-hidden="true"></i></td>
+            <td style="text-transform:lowercase;">kapil.kr909@gmail.com</td>
+          </tr>
+        </table>
+      </p>
 
-			<div class="visiter">
-				 Visitors :- 
-			</div>
-		</div>
-	</div>
+      <div style="color: rgb(48, 36, 36);" class="visiter">
+         Visitors :- 
+      </div>
+    </div>
+  </div>
 </div>
 </div>
-</div>
-
 <!-------Footer  start------->
 
     <script>
