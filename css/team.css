@@ -1,0 +1,34 @@
+.team{
+	height: 280px;
+	width: 250px;
+	border:1px solid #cecece;
+	margin: auto;
+	padding: 10px;
+	background-color: #f1f1f1;
+}
+.team-img{
+	height: 190px;
+	width: 150px;
+	border:1px solid blue;
+	border-radius: 100%;
+	margin: auto;
+}
+.team .team-img img{
+	height: 100%;
+	width: 100%;
+}
+.mname{
+	text-align: center;
+	padding-top: 5px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #c0c0be;
+}
+.pname{
+	text-align: center;
+	font-size: 14px;
+	font-weight: initial;
+	font-family: 'Montserrat', sans-serif;
+	color: #42433e;
+	margin-top: -8px;
+}
