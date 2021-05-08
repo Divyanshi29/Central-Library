@@ -21,7 +21,7 @@
  <div class="container-fluid container ">
 
     <ul class="nav navbar-nav">
-      <li class="tabOuter" ><a class="borderOuter" href="#">Home</a></li>
+      <li class="tabOuter" ><a class="borderOuter" href="index.php">Home</a></li>
       <li class="tabOuter" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About<span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a class="borderInner" href="#">Library Team</a></li>
@@ -43,7 +43,7 @@
       </li>
 <li class="tabOuter" class="dropdown"><a class="borderOuter" class="dropdown-toggle" data-toggle="dropdown" href="#">Resources<span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a class="borderInner" href="#">E-TextBooks</a></li>
+          <li><a class="borderInner" href="Ebook.php">E-TextBooks</a></li>
           <li><a class="borderInner" href="#">Online-Journals</a></li>
           <li><a  href="#">Magazines</a></li>
   
