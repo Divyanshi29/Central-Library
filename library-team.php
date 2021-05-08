@@ -2,7 +2,6 @@
 
 include("include/main.php");
 include("include/header.php");
-
 ?>
 <section>
   <div class="container" style="box-shadow: 2px 2px 10px black;">
@@ -120,7 +119,7 @@ include("include/header.php");
 
     
     <div class="row">
-      <h4 style="padding: 15px 5px 10px 20px; font-weight: bolder;background-color: #cecece;">LLibrary Staffs</h4>
+      <h4 style="padding: 15px 5px 10px 20px; font-weight: bolder;background-color: #cecece;">Library Staffs</h4>
       <div class="col" style="padding: 30px;">
         <div class="team">
           <div class="team-img">
