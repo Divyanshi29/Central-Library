@@ -23,14 +23,13 @@
   margin-top: -20px;
 }
 .affix {
-    top: 0;
-    width: 100%;
-    z-index: 9999 !important;
- }
- .affix + .container-fluid {
-    padding-top: 50px;
- }
-
+  top: 0;
+  width: 100%;
+  z-index: 9999 !important;
+}
+.affix + .container-fluid {
+  padding-top: 50px;
+}
 
 button {
   cursor: pointer;
@@ -220,37 +219,6 @@ button {
   box-sizing: border-box;
 }
 
-.carousel1 {
-  overflow: hidden;
-  position: absolute;
-  margin-top: -450px;
-  background-position: center;
-  width: 100%;
-  height: 400px;
-  -webkit-perspective: 500px;
-  perspective: 500px;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform-origin: 0% 50%;
-  transform-origin: 0% 50%;
-}
-
-.carousel-item1 {
-  visibility: hidden;
-  width: 550px;
-  height: 400px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: white;
-}
-.carousel1 .carousel-item1 > a > img {
-  width: 100%;
-}
-.carousel-item1 p {
-  font-size: 20px;
-  background-color: #ffffff;
-}
 /*--------------- Footer ------------------ */
 .footer {
   /*background: #681424; */
@@ -287,6 +255,7 @@ button {
 .counter-section {
   margin: 5% auto;
   color: #fff;
+  background-image: rgba(26, 26, 26, 0.98);
 }
 .icon-box {
   border: 1px solid #fff;
@@ -316,7 +285,7 @@ button {
 .counter-bg {
   /* background: url('../image/ftback.jpg') no-repeat; */
   width: 100%;
-  height: 320px;
+  height: 300px;
 }
 .colorFooter {
   background: url('../image/ftback.jpg') no-repeat;
@@ -411,4 +380,40 @@ button {
 }
 .borderInner {
   border-bottom: rgb(216, 214, 214) 1px solid;
+}
+
+ /* Library-Team*/
+ .team{
+  height: 280px;
+  width: 250px;
+  border:1px solid #cecece;
+  margin: auto;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+.team-img{
+  height: 190px;
+  width: 150px;
+  border:1px solid blue;
+  border-radius: 100%;
+  margin: auto;
+}
+.team .team-img img{
+  height: 100%;
+  width: 100%;
+}
+.mname{
+  text-align: center;
+  padding-top: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #c0c0be;
+}
+.pname{
+  text-align: center;
+  font-size: 14px;
+  font-weight: initial;
+  font-family: 'Montserrat', sans-serif;
+  color: #42433e;
+  margin-top: -8px;
 }

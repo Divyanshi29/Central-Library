@@ -1,98 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Central Library</title>
 
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   	<link rel="stylesheet" type="text/css" href="css/style.css">
-<!--<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"> -->
-
-  <!-- <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script> -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/> -->
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
-</head>
-<body>
 
 <!-- header part -->
-    <header class="myhead">
-      <div class="container">
-        <div class="row head">
-          <div class="col-sm-5 head-text" style="text-align: left;">
-            <h2 style="color:white;">Central Library</h2> 
-            <h4 style="color:white;">National Institute of Technology, Jamshedpur</h4>
-          </div>
-           <div class="col-sm-2" style="text-align:right">
-            <img class="logo" src="image/logo.png">
-          </div>
-          <div class="col-sm-5 head-text" style="text-align:right">
-            <h2 style="color:white;">केंद्रीय पुस्तकालय</h2> 
-            <h4 style="color:white;">   राष्ट्रीय प्रौद्योगिकी संस्थान, जमशेदपुर</h4>
-          </div>
-        </div>
-      </div>
+
+    
+<?php
+
+include("include/main.php");
+include("include/header.php");
+//include("include/content.php");
+?>
 
 
-  <!--  nav part -->
-<nav  class="navbar navbar-inverse" data-spy="affix" data-offset-top="197" style="background-color:#030218; ">
- <div class="container-fluid container ">
+     <!-- Divyanshi's Code-->
 
-    <ul class="nav navbar-nav">
-      <li class="tabOuter" ><a class="borderOuter" href="#">Home</a></li>
-      <li class="tabOuter" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a class="borderInner" href="#">Library Team</a></li>
-          <li><a class="borderInner" href="#">Working Hours</a></li>
-          <li><a class="borderInner" href="#">Rules</a></li>
-  <li><a class="borderInner" href="#">Space</a></li>
-  <li><a class="borderInner" href="#">Acquistion and Processing Team</a></li>
-  <li><a href="#">Photo Gallery</a></li>
-        </ul>
-      </li>
-<li class="tabOuter" class="dropdown"><a class="borderOuter" class="dropdown-toggle" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a class="borderInner" href="#">Information</a></li>
-          <li><a class="borderInner" href="#">Feedback</a></li>
-          <li><a class="borderInner" href="#">Book Bank</a></li>
-  <li><a href="#">Recommend a Book</a></li>
-  
-        </ul>
-      </li>
-<li class="tabOuter" class="dropdown"><a class="borderOuter" class="dropdown-toggle" data-toggle="dropdown" href="#">Resources<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a class="borderInner" href="#">E-TextBooks</a></li>
-          <li><a class="borderInner" href="#">Online-Journals</a></li>
-          <li><a  href="#">Magazines</a></li>
-  
-        </ul>
-      </li>
-      </ul>
-      
-   <ul class="nav navbar-nav navbar-right">
-      <li class="tabOuter" class="dropdown"><a class="borderOuter" class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> Sign Up <span  class="caret"></span></a>
-          <ul class="dropdown-menu">
-          <li><a class="borderInner" href="#">Admin</a></li>
-          <li><a  href="#">Student</a></li>
-          </ul>
-          </li>
-          <li class="tabOuter" class="dropdown"><a class="borderOuter" class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-log-in"></span> Login <span  class="caret"></span></a>
-          <ul class="dropdown-menu">
-          <li><a class="borderInner" href="#">Admin</a></li>
-          <li><a  href="#">Student</a></li>
-          </ul>
-          </li>
-    </ul>
-  </div>
-</nav>
-</header>
-
-
-    <!-- Divyanshi's Code-->
 <section class="slide-image">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -102,7 +22,7 @@
       <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
 
-    <!-- Wrapper for slides -->
+     <!-- Wrapper for slides -->
     <div class="carousel-inner" >
       <div class="item active img-size">
         <img src="image/library.jpg" alt="Los Angeles" style="width:100%; height:100%">
@@ -117,7 +37,7 @@
       </div>
     </div>
 
-    <!-- Left and right controls -->
+ <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left"></span>
       <span class="sr-only">Previous</span>
@@ -129,7 +49,39 @@
   </div>
 </section>
 
-   
+    <!-- <div id="demo" class="carousel slide" data-ride="carousel">
+
+//   <ul class="carousel-indicators">
+//     <li data-target="#demo" data-slide-to="0" class="active"></li>
+//     <li data-target="#demo" data-slide-to="1"></li>
+//     <li data-target="#demo" data-slide-to="2"></li>
+//   </ul>
+  
+
+//   <div class="carousel-inner">
+//     <div class="carousel-item active">
+//       <img src="image/1.jpg" alt="Los Angeles" width="1100" height="500">
+//     </div>
+//     <div class="carousel-item">
+//       <img src="image/2.jpg" alt="Chicago" width="1100" height="500">
+//     </div>
+//     <div class="carousel-item">
+//       <img src="image/3.jpg" alt="New York" width="1100" height="500">
+//     </div>
+//   </div>
+  
+
+//   <a class="carousel-control-prev" href="#demo" data-slide="prev">
+//     <span class="carousel-control-prev-icon"></span>
+//   </a>
+//   <a class="carousel-control-next" href="#demo" data-slide="next">
+//     <span class="carousel-control-next-icon"></span>
+//   </a>
+// </div>-->
+
+
+
+
 
    <!---- Abhilasha code ------------->
     <section class="desc">
@@ -154,9 +106,9 @@
         <div class="queck-link" style="box-shadow: 5px 5px 20px black;">
           <div class="queck-link_cap">
              <i class="fa fa-bell-o" aria-hidden="true"></i> 
-             <b>Welcome To Central Library</b><br>
+             <b>Welcome To Central Library</b><br><p style="font-size: 18px;padding-left: 5px;"></p>
           </div>
-          <p style="font-size: 16px;">
+          <p>
             National Institute of Technology, Jamshedpur takes extreme pride in the fact that it has been occupying a unique position in imparting technological education to Indian youth. Since its inception, the institute has had a vision to provide quality technical education and to facilitate scientific and technological research, coupled with a mission to develop human potential to its zenith.
           </p>
         </div> 
@@ -169,14 +121,6 @@
       </div>
       <marquee direction="up" scrollamount="4" onmouseover="this.stop()" onmouseout="this.start()" style="height:280px; cursor: pointer;">
         <ul>
-          <!-- <?php 
-            include('bpc/comman/connect.php');
-            $res=$con->query("select * from news order by(nid) desc");
-            while($row=mysqli_fetch_array($res))
-            {
-              echo "<li>".$row['news']."</li>";
-            }
-          ?>  -->
           <li><a href="www.google.com">news1</a></li>
           <li><a href="www.google.com">news1</a></li>
           <li><a href="www.google.com">news1</a></li>
@@ -199,7 +143,7 @@
   </div>
 </section>
 
-    <!------------------------------------------------>
+    <!-- -------------------------------------------- -->
 <h1 style="text-align: center;margin-top:60px;margin-bottom: 60px;font-weight: bolder;font-family: 'Montserrat', sans-serif;">FACILITIES</h1>
      <section id="portfolio">
       <div class="project">
@@ -248,26 +192,19 @@
       </div>
     </section> 
 
-<<<<<<< HEAD
-  <!-- Image carousal-->
-  <div >
-   <div class="carousel" >
-      <div class="carousel-item">
-=======
   <!-- Image carousal
    <div >
    <div class="carousel carousel1" >
       <div class="carousel-item carousel-item1">
->>>>>>> master
         <a href="https://www.google.com"><img  style="border:3px solid red ;" src="image/1.jpg" alt="" /></a>
         <p style="text-align: center;font-weight: bold;">National Digital Library</p>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item carousel-item1">
          <a href="https://www.google.com">
         <img  style="border:3px solid red ;" src="image/2.jpg" alt="" /></a>
         <p style="text-align: center;font-weight: bold;">JGate-NIT Lib. Consortium</p>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item carousel-item1">
           <a href="https://www.google.com">
         <img  style="border:3px solid red ;" src="image/3.jpg" alt="" /></a>
         <p style="text-align: center;font-weight: bold;">Institutional Digital Repository<p>
@@ -275,7 +212,7 @@
     </div>
     </div> -->
 
-  <!-- Image card-->
+  <!-- Image card -->
   <div class="card-parent">
   <div class="card">
 
@@ -336,10 +273,9 @@
 
     
 <!-------Counter start------->
-
-<section>
-  <div class="container-fluid counter-bg" style="background-color:#8c92ac">
-  <div class="container counter-section">
+<div style="background-color:#8c92ac">
+<div class="container-fluid counter-bg">
+	<div class="container counter-section">
         <div class="row text-center">
             <div class="col-sm-3 counter-box">
                 <div class="icon-box">
@@ -371,65 +307,64 @@
             </div>
         </div>
     </div>
-</section>
+</div>
 <!-------Counter end------->
 
 
-
-</div>
 <!-------Footer  start------->
 
-<div class="container-fluid footer" style="background-color:#8c92ac">
+<div class="container-fluid footer">
 <div class="container">
-  <div class="row">
-    <div class="col-sm-4 wow fadeInUp" data-wow-duration="3s">
-      <div style="color: rgb(48, 36, 36);" class="footname">Site Map</div>
-      <a style="color: rgb(48, 36, 36);" href="index"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Home</a><br>
-      <a style="color: rgb(48, 36, 36);" href="about"><i class="fa fa-angle-double-right" aria-hidden="true"></i> About</a><br>
-      <a style="color: rgb(48, 36, 36);" href="course"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Services</a><br>
-      <a style="color: rgb(48, 36, 36);" href="gallery"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Resources</a><br>
-      <a style="color: rgb(48, 36, 36);" href="contact"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Contact</a>
-    </div>
-    <div class="col-sm-4 wow fadeInUp" data-wow-duration="3s">
-      <div style="color: rgb(48, 36, 36);" class="footname">Collaboration To</div>
-      <div style="opacity: 1;">
-        <img src="image/logo.png" class="logo" style="  -webkit-filter: invert(100%); color:black; filter: invert(100%); margin-left: 90px;">
-      </div>
-      
-    </div>
-    <div class="col-sm-4 wow fadeInUp" data-wow-duration="3s">
-      <div style="color: rgb(48, 36, 36);" class="footname">Address</div>
-      <p>
-        <table style="color: rgb(48, 36, 36);">
-          <tr>
-            <td valign="top" style="padding-right:10px;"><i class="fa fa-map-marker" aria-hidden="true"></i></td>
-            <td>
-              National Institute of Technology,<br> Jamshedpur<br>
-               Adityapur, Jamshedpur, Jharkhand<br> 831014
-            </td>
-          </tr>
-          <tr>
-            <td style="padding-right:10px;"><i class="fa fa-phone" aria-hidden="true"></i>
-            </td>
-            <td>+91 8507107839</td>
-          </tr>
-          <tr>
-            <td style="padding-right:10px;"><i class="fa fa-envelope" aria-hidden="true"></i></td>
-            <td style="text-transform:lowercase;">kapil.kr909@gmail.com</td>
-          </tr>
-        </table>
-      </p>
+	<div class="row">
+		<div class="col-sm-4 wow fadeInUp" data-wow-duration="3s">
+			<div style="color: rgb(48, 36, 36);" class="footname">Site Map</div>
+			<a style="color: rgb(48, 36, 36);" href="index"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Home</a><br>
+			<a style="color: rgb(48, 36, 36);" href="about"><i class="fa fa-angle-double-right" aria-hidden="true"></i> About</a><br>
+			<a style="color: rgb(48, 36, 36);" href="course"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Services</a><br>
+			<a style="color: rgb(48, 36, 36);" href="gallery"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Resources</a><br>
+			<a style="color: rgb(48, 36, 36);" href="contact"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Contact</a>
+		</div>
+		<div class="col-sm-4 wow fadeInUp" data-wow-duration="3s">
+			<div style="color: rgb(48, 36, 36);" class="footname">Collaboration To</div>
+			<div style="opacity: 1;">
+				<img src="image/logo.png" class="logo" style="  -webkit-filter: invert(100%); color:black; filter: invert(100%); margin-left: 90px;">
+			</div>
+			
+		</div>
+		<div class="col-sm-4 wow fadeInUp" data-wow-duration="3s">
+			<div style="color: rgb(48, 36, 36);" class="footname">Address</div>
+			<p>
+				<table style="color: rgb(48, 36, 36);">
+					<tr>
+						<td valign="top" style="padding-right:10px;"><i class="fa fa-map-marker" aria-hidden="true"></i></td>
+						<td>
+							National Institute of Technology,<br> Jamshedpur<br>
+							 Adityapur, Jamshedpur, Jharkhand<br> 831014
+						</td>
+					</tr>
+					<tr>
+						<td style="padding-right:10px;"><i class="fa fa-phone" aria-hidden="true"></i>
+						</td>
+						<td>+91 8507107839</td>
+					</tr>
+					<tr>
+						<td style="padding-right:10px;"><i class="fa fa-envelope" aria-hidden="true"></i></td>
+						<td style="text-transform:lowercase;">kapil.kr909@gmail.com</td>
+					</tr>
+				</table>
+			</p>
 
-      <div style="color: rgb(48, 36, 36);" class="visiter">
-         Visitors :- 
-      </div>
-    </div>
-  </div>
+			<div style="color: rgb(48, 36, 36);" class="visiter">
+				 Visitors :- 
+			</div>
+		</div>
+	</div>
 </div>
 </div>
+</div>
+
 <!-------Footer  start------->
-
-    <script>
+ <script>
         jQuery(document).ready(function($){
             $('.counter').counterUp({
             delay: 10,
@@ -454,5 +389,4 @@
         $('.carousel').carousel();
       });
     </script>
-</body>
-</html>
+    
