@@ -5,7 +5,7 @@
             <h2 style="color:white;">Central Library</h2> 
             <h4 style="color:white;">National Institute of Technology, Jamshedpur</h4>
           </div>
-           <div class="col-sm-1">
+           <div class="col-sm-2" style="text-align:right">
             <img class="logo" src="image/logo.png">
           </div>
           <div class="col-sm-5 head-text" style="text-align:right">

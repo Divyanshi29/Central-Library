@@ -1,26 +1,6 @@
 
 
 <!-- header part -->
-<<<<<<< HEAD:index.html
-    <header class="myhead">
-      <div class="container">
-        <div class="row head">
-          <div class="col-sm-5 head-text" style="text-align: left;">
-            <h2 style="color:white;">Central Library</h2> 
-            <h4 style="color:white;">National Institute of Technology, Jamshedpur</h4>
-          </div>
-           <div class="col-sm-2" style="text-align:right">
-            <img class="logo" src="image/logo.png">
-          </div>
-          <div class="col-sm-5 head-text" style="text-align:right">
-            <h2 style="color:white;">केंद्रीय पुस्तकालय</h2> 
-            <h4 style="color:white;">   राष्ट्रीय प्रौद्योगिकी संस्थान, जमशेदपुर</h4>
-          </div>
-        </div>
-      </div>
-=======
->>>>>>> master:index.php
-
     
 <?php
 
@@ -29,61 +9,7 @@ include("include/header.php");
 //include("include/content.php");
 ?>
 
-<<<<<<< HEAD:index.html
-  <!--  nav part -->
-<nav  class="navbar navbar-inverse" data-spy="affix" data-offset-top="197" style="background-color:#030218; ">
- <div class="container-fluid container ">
 
-    <ul class="nav navbar-nav">
-      <li class="tabOuter" ><a class="borderOuter" href="#">Home</a></li>
-      <li class="tabOuter" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a class="borderInner" href="#">Library Team</a></li>
-          <li><a class="borderInner" href="#">Working Hours</a></li>
-          <li><a class="borderInner" href="#">Rules</a></li>
-  <li><a class="borderInner" href="#">Space</a></li>
-  <li><a class="borderInner" href="#">Acquistion and Processing Team</a></li>
-  <li><a href="#">Photo Gallery</a></li>
-        </ul>
-      </li>
-<li class="tabOuter" class="dropdown"><a class="borderOuter" class="dropdown-toggle" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a class="borderInner" href="#">Information</a></li>
-          <li><a class="borderInner" href="#">Feedback</a></li>
-          <li><a class="borderInner" href="#">Book Bank</a></li>
-  <li><a href="#">Recommend a Book</a></li>
-  
-        </ul>
-      </li>
-<li class="tabOuter" class="dropdown"><a class="borderOuter" class="dropdown-toggle" data-toggle="dropdown" href="#">Resources<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a class="borderInner" href="#">E-TextBooks</a></li>
-          <li><a class="borderInner" href="#">Online-Journals</a></li>
-          <li><a  href="#">Magazines</a></li>
-  
-        </ul>
-      </li>
-      </ul>
-      
-   <ul class="nav navbar-nav navbar-right">
-      <li class="tabOuter" class="dropdown"><a class="borderOuter" class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> Sign Up <span  class="caret"></span></a>
-          <ul class="dropdown-menu">
-          <li><a class="borderInner" href="#">Admin</a></li>
-          <li><a  href="#">Student</a></li>
-          </ul>
-          </li>
-          <li class="tabOuter" class="dropdown"><a class="borderOuter" class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-log-in"></span> Login <span  class="caret"></span></a>
-          <ul class="dropdown-menu">
-          <li><a class="borderInner" href="#">Admin</a></li>
-          <li><a  href="#">Student</a></li>
-          </ul>
-          </li>
-    </ul>
-  </div>
-</nav>
-</header>
-=======
->>>>>>> master:index.php
 
      <!-- Divyanshi's Code-->
 
@@ -123,43 +49,7 @@ include("include/header.php");
   </div>
 </section>
 
-<<<<<<< HEAD:index.html
-   
-=======
-    <!-- <div id="demo" class="carousel slide" data-ride="carousel">
 
-//   <ul class="carousel-indicators">
-//     <li data-target="#demo" data-slide-to="0" class="active"></li>
-//     <li data-target="#demo" data-slide-to="1"></li>
-//     <li data-target="#demo" data-slide-to="2"></li>
-//   </ul>
-  
-
-//   <div class="carousel-inner">
-//     <div class="carousel-item active">
-//       <img src="image/1.jpg" alt="Los Angeles" width="1100" height="500">
-//     </div>
-//     <div class="carousel-item">
-//       <img src="image/2.jpg" alt="Chicago" width="1100" height="500">
-//     </div>
-//     <div class="carousel-item">
-//       <img src="image/3.jpg" alt="New York" width="1100" height="500">
-//     </div>
-//   </div>
-  
-
-//   <a class="carousel-control-prev" href="#demo" data-slide="prev">
-//     <span class="carousel-control-prev-icon"></span>
-//   </a>
-//   <a class="carousel-control-next" href="#demo" data-slide="next">
-//     <span class="carousel-control-next-icon"></span>
-//   </a>
-// </div>-->
-
-
-
-
->>>>>>> master:index.php
 
    <!---- Abhilasha code ------------->
     <section class="desc">
@@ -199,17 +89,6 @@ include("include/header.php");
       </div>
       <marquee direction="up" scrollamount="4" onmouseover="this.stop()" onmouseout="this.start()" style="height:280px; cursor: pointer;">
         <ul>
-<<<<<<< HEAD:index.html
-          <!-- <?php 
-            include('bpc/comman/connect.php');
-            $res=$con->query("select * from news order by(nid) desc");
-            while($row=mysqli_fetch_array($res))
-            {
-              echo "<li>".$row['news']."</li>";
-            }
-          ?>  -->
-=======
->>>>>>> master:index.php
           <li><a href="www.google.com">news1</a></li>
           <li><a href="www.google.com">news1</a></li>
           <li><a href="www.google.com">news1</a></li>
@@ -281,12 +160,11 @@ include("include/header.php");
       </div>
     </section> 
 
-<<<<<<< HEAD
   <!-- Image carousal-->
   <div >
    <div class="carousel" >
       <div class="carousel-item">
-=======
+
   <!-- Image carousal
    <div >
    <div class="carousel carousel1" >
