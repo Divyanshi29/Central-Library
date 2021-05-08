@@ -1,25 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Central Library</title>
 
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   	<link rel="stylesheet" type="text/css" href="css/style.css">
-<!--<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"> -->
-
-  <!-- <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script> -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/> -->
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
-</head>
-<body>
 
 <!-- header part -->
+<<<<<<< HEAD:index.html
     <header class="myhead">
       <div class="container">
         <div class="row head">
@@ -36,8 +18,18 @@
           </div>
         </div>
       </div>
+=======
+>>>>>>> master:index.php
 
+    
+<?php
 
+include("include/main.php");
+include("include/header.php");
+//include("include/content.php");
+?>
+
+<<<<<<< HEAD:index.html
   <!--  nav part -->
 <nav  class="navbar navbar-inverse" data-spy="affix" data-offset-top="197" style="background-color:#030218; ">
  <div class="container-fluid container ">
@@ -90,9 +82,11 @@
   </div>
 </nav>
 </header>
+=======
+>>>>>>> master:index.php
 
+     <!-- Divyanshi's Code-->
 
-    <!-- Divyanshi's Code-->
 <section class="slide-image">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -102,7 +96,7 @@
       <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
 
-    <!-- Wrapper for slides -->
+     <!-- Wrapper for slides -->
     <div class="carousel-inner" >
       <div class="item active img-size">
         <img src="image/library.jpg" alt="Los Angeles" style="width:100%; height:100%">
@@ -117,7 +111,7 @@
       </div>
     </div>
 
-    <!-- Left and right controls -->
+ <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left"></span>
       <span class="sr-only">Previous</span>
@@ -129,7 +123,43 @@
   </div>
 </section>
 
+<<<<<<< HEAD:index.html
    
+=======
+    <!-- <div id="demo" class="carousel slide" data-ride="carousel">
+
+//   <ul class="carousel-indicators">
+//     <li data-target="#demo" data-slide-to="0" class="active"></li>
+//     <li data-target="#demo" data-slide-to="1"></li>
+//     <li data-target="#demo" data-slide-to="2"></li>
+//   </ul>
+  
+
+//   <div class="carousel-inner">
+//     <div class="carousel-item active">
+//       <img src="image/1.jpg" alt="Los Angeles" width="1100" height="500">
+//     </div>
+//     <div class="carousel-item">
+//       <img src="image/2.jpg" alt="Chicago" width="1100" height="500">
+//     </div>
+//     <div class="carousel-item">
+//       <img src="image/3.jpg" alt="New York" width="1100" height="500">
+//     </div>
+//   </div>
+  
+
+//   <a class="carousel-control-prev" href="#demo" data-slide="prev">
+//     <span class="carousel-control-prev-icon"></span>
+//   </a>
+//   <a class="carousel-control-next" href="#demo" data-slide="next">
+//     <span class="carousel-control-next-icon"></span>
+//   </a>
+// </div>-->
+
+
+
+
+>>>>>>> master:index.php
 
    <!---- Abhilasha code ------------->
     <section class="desc">
@@ -169,6 +199,7 @@
       </div>
       <marquee direction="up" scrollamount="4" onmouseover="this.stop()" onmouseout="this.start()" style="height:280px; cursor: pointer;">
         <ul>
+<<<<<<< HEAD:index.html
           <!-- <?php 
             include('bpc/comman/connect.php');
             $res=$con->query("select * from news order by(nid) desc");
@@ -177,6 +208,8 @@
               echo "<li>".$row['news']."</li>";
             }
           ?>  -->
+=======
+>>>>>>> master:index.php
           <li><a href="www.google.com">news1</a></li>
           <li><a href="www.google.com">news1</a></li>
           <li><a href="www.google.com">news1</a></li>
@@ -199,7 +232,7 @@
   </div>
 </section>
 
-    <!------------------------------------------------>
+    <!-- -------------------------------------------- -->
 <h1 style="text-align: center;margin-top:60px;margin-bottom: 60px;font-weight: bolder;font-family: 'Montserrat', sans-serif;">FACILITIES</h1>
      <section id="portfolio">
       <div class="project">
@@ -275,7 +308,7 @@
     </div>
     </div> -->
 
-  <!-- Image card-->
+  <!-- Image card -->
   <div class="card-parent">
   <div class="card">
 
@@ -428,8 +461,7 @@
 </div>
 </div>
 <!-------Footer  start------->
-
-    <script>
+ <script>
         jQuery(document).ready(function($){
             $('.counter').counterUp({
             delay: 10,
@@ -454,5 +486,4 @@
         $('.carousel').carousel();
       });
     </script>
-</body>
-</html>
+    
