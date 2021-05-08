@@ -1,7 +1,6 @@
 
 
 <!-- header part -->
-
     
 <?php
 
@@ -9,6 +8,7 @@ include("include/main.php");
 include("include/header.php");
 //include("include/content.php");
 ?>
+
 
 
      <!-- Divyanshi's Code-->
@@ -49,38 +49,6 @@ include("include/header.php");
   </div>
 </section>
 
-    <!-- <div id="demo" class="carousel slide" data-ride="carousel">
-
-//   <ul class="carousel-indicators">
-//     <li data-target="#demo" data-slide-to="0" class="active"></li>
-//     <li data-target="#demo" data-slide-to="1"></li>
-//     <li data-target="#demo" data-slide-to="2"></li>
-//   </ul>
-  
-
-//   <div class="carousel-inner">
-//     <div class="carousel-item active">
-//       <img src="image/1.jpg" alt="Los Angeles" width="1100" height="500">
-//     </div>
-//     <div class="carousel-item">
-//       <img src="image/2.jpg" alt="Chicago" width="1100" height="500">
-//     </div>
-//     <div class="carousel-item">
-//       <img src="image/3.jpg" alt="New York" width="1100" height="500">
-//     </div>
-//   </div>
-  
-
-//   <a class="carousel-control-prev" href="#demo" data-slide="prev">
-//     <span class="carousel-control-prev-icon"></span>
-//   </a>
-//   <a class="carousel-control-next" href="#demo" data-slide="next">
-//     <span class="carousel-control-next-icon"></span>
-//   </a>
-// </div>-->
-
-
-
 
 
    <!---- Abhilasha code ------------->
@@ -106,9 +74,9 @@ include("include/header.php");
         <div class="queck-link" style="box-shadow: 5px 5px 20px black;">
           <div class="queck-link_cap">
              <i class="fa fa-bell-o" aria-hidden="true"></i> 
-             <b>Welcome To Central Library</b><br><p style="font-size: 18px;padding-left: 5px;"></p>
+             <b>Welcome To Central Library</b><br>
           </div>
-          <p>
+          <p style="font-size: 16px;">
             National Institute of Technology, Jamshedpur takes extreme pride in the fact that it has been occupying a unique position in imparting technological education to Indian youth. Since its inception, the institute has had a vision to provide quality technical education and to facilitate scientific and technological research, coupled with a mission to develop human potential to its zenith.
           </p>
         </div> 
@@ -192,19 +160,25 @@ include("include/header.php");
       </div>
     </section> 
 
+  <!-- Image carousal-->
+  <div >
+   <div class="carousel" >
+      <div class="carousel-item">
+
   <!-- Image carousal
    <div >
    <div class="carousel carousel1" >
       <div class="carousel-item carousel-item1">
+>>>>>>> master
         <a href="https://www.google.com"><img  style="border:3px solid red ;" src="image/1.jpg" alt="" /></a>
         <p style="text-align: center;font-weight: bold;">National Digital Library</p>
       </div>
-      <div class="carousel-item carousel-item1">
+      <div class="carousel-item">
          <a href="https://www.google.com">
         <img  style="border:3px solid red ;" src="image/2.jpg" alt="" /></a>
         <p style="text-align: center;font-weight: bold;">JGate-NIT Lib. Consortium</p>
       </div>
-      <div class="carousel-item carousel-item1">
+      <div class="carousel-item">
           <a href="https://www.google.com">
         <img  style="border:3px solid red ;" src="image/3.jpg" alt="" /></a>
         <p style="text-align: center;font-weight: bold;">Institutional Digital Repository<p>
@@ -273,9 +247,10 @@ include("include/header.php");
 
     
 <!-------Counter start------->
-<div style="background-color:#8c92ac">
-<div class="container-fluid counter-bg">
-	<div class="container counter-section">
+
+<section>
+  <div class="container-fluid counter-bg" style="background-color:#8c92ac">
+  <div class="container counter-section">
         <div class="row text-center">
             <div class="col-sm-3 counter-box">
                 <div class="icon-box">
@@ -307,62 +282,62 @@ include("include/header.php");
             </div>
         </div>
     </div>
-</div>
+</section>
 <!-------Counter end------->
 
 
+
+</div>
 <!-------Footer  start------->
 
-<div class="container-fluid footer">
+<div class="container-fluid footer" style="background-color:#8c92ac">
 <div class="container">
-	<div class="row">
-		<div class="col-sm-4 wow fadeInUp" data-wow-duration="3s">
-			<div style="color: rgb(48, 36, 36);" class="footname">Site Map</div>
-			<a style="color: rgb(48, 36, 36);" href="index"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Home</a><br>
-			<a style="color: rgb(48, 36, 36);" href="about"><i class="fa fa-angle-double-right" aria-hidden="true"></i> About</a><br>
-			<a style="color: rgb(48, 36, 36);" href="course"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Services</a><br>
-			<a style="color: rgb(48, 36, 36);" href="gallery"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Resources</a><br>
-			<a style="color: rgb(48, 36, 36);" href="contact"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Contact</a>
-		</div>
-		<div class="col-sm-4 wow fadeInUp" data-wow-duration="3s">
-			<div style="color: rgb(48, 36, 36);" class="footname">Collaboration To</div>
-			<div style="opacity: 1;">
-				<img src="image/logo.png" class="logo" style="  -webkit-filter: invert(100%); color:black; filter: invert(100%); margin-left: 90px;">
-			</div>
-			
-		</div>
-		<div class="col-sm-4 wow fadeInUp" data-wow-duration="3s">
-			<div style="color: rgb(48, 36, 36);" class="footname">Address</div>
-			<p>
-				<table style="color: rgb(48, 36, 36);">
-					<tr>
-						<td valign="top" style="padding-right:10px;"><i class="fa fa-map-marker" aria-hidden="true"></i></td>
-						<td>
-							National Institute of Technology,<br> Jamshedpur<br>
-							 Adityapur, Jamshedpur, Jharkhand<br> 831014
-						</td>
-					</tr>
-					<tr>
-						<td style="padding-right:10px;"><i class="fa fa-phone" aria-hidden="true"></i>
-						</td>
-						<td>+91 8507107839</td>
-					</tr>
-					<tr>
-						<td style="padding-right:10px;"><i class="fa fa-envelope" aria-hidden="true"></i></td>
-						<td style="text-transform:lowercase;">kapil.kr909@gmail.com</td>
-					</tr>
-				</table>
-			</p>
+  <div class="row">
+    <div class="col-sm-4 wow fadeInUp" data-wow-duration="3s">
+      <div style="color: rgb(48, 36, 36);" class="footname">Site Map</div>
+      <a style="color: rgb(48, 36, 36);" href="index"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Home</a><br>
+      <a style="color: rgb(48, 36, 36);" href="about"><i class="fa fa-angle-double-right" aria-hidden="true"></i> About</a><br>
+      <a style="color: rgb(48, 36, 36);" href="course"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Services</a><br>
+      <a style="color: rgb(48, 36, 36);" href="gallery"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Resources</a><br>
+      <a style="color: rgb(48, 36, 36);" href="contact"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Contact</a>
+    </div>
+    <div class="col-sm-4 wow fadeInUp" data-wow-duration="3s">
+      <div style="color: rgb(48, 36, 36);" class="footname">Collaboration To</div>
+      <div style="opacity: 1;">
+        <img src="image/logo.png" class="logo" style="  -webkit-filter: invert(100%); color:black; filter: invert(100%); margin-left: 90px;">
+      </div>
+      
+    </div>
+    <div class="col-sm-4 wow fadeInUp" data-wow-duration="3s">
+      <div style="color: rgb(48, 36, 36);" class="footname">Address</div>
+      <p>
+        <table style="color: rgb(48, 36, 36);">
+          <tr>
+            <td valign="top" style="padding-right:10px;"><i class="fa fa-map-marker" aria-hidden="true"></i></td>
+            <td>
+              National Institute of Technology,<br> Jamshedpur<br>
+               Adityapur, Jamshedpur, Jharkhand<br> 831014
+            </td>
+          </tr>
+          <tr>
+            <td style="padding-right:10px;"><i class="fa fa-phone" aria-hidden="true"></i>
+            </td>
+            <td>+91 8507107839</td>
+          </tr>
+          <tr>
+            <td style="padding-right:10px;"><i class="fa fa-envelope" aria-hidden="true"></i></td>
+            <td style="text-transform:lowercase;">kapil.kr909@gmail.com</td>
+          </tr>
+        </table>
+      </p>
 
-			<div style="color: rgb(48, 36, 36);" class="visiter">
-				 Visitors :- 
-			</div>
-		</div>
-	</div>
+      <div style="color: rgb(48, 36, 36);" class="visiter">
+         Visitors :- 
+      </div>
+    </div>
+  </div>
 </div>
 </div>
-</div>
-
 <!-------Footer  start------->
  <script>
         jQuery(document).ready(function($){
