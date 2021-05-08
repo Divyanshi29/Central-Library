@@ -15,7 +15,6 @@
         </div>
       </div>
 
-
   <!--  nav part -->
 <nav  class="navbar navbar-inverse" data-spy="affix" data-offset-top="197" style="background-color:#030218; ">
  <div class="container-fluid container ">
@@ -24,7 +23,7 @@
       <li class="tabOuter" ><a class="borderOuter" href="index.php">Home</a></li>
       <li class="tabOuter" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About<span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a class="borderInner" href="#">Library Team</a></li>
+          <li><a class="borderInner" href="library-team.php">Library Team</a></li>
           <li><a class="borderInner" href="#">Working Hours</a></li>
           <li><a class="borderInner" href="#">Rules</a></li>
   <li><a class="borderInner" href="#">Space</a></li>
