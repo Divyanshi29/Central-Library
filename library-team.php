@@ -242,3 +242,4 @@ include("include/header.php");
     </div>
   </div>
 </section>
+<?php include("include/footerstrip.php"); ?>
