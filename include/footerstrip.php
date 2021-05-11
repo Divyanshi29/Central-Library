@@ -7,7 +7,7 @@
     <title></title>
 </head>
 <body>
-<div class="footer" style="background-color:#090832;text-align:center;height:50px;padding:15px 0px 0px 0px;color:white;position: fixed;
+<div class="footer" style="background-color:#090832;text-align:center;height:50px;padding:15px 0px 0px 0px;color:white;
   bottom: 0;
   width: 100%;">
 Copyright © 2021 Central Library, <a href="http://nitjsr.ac.in/" style="color:grey;"> National Institute of Technology Jamshedpur</a> Adityapur | Made By MCA 
