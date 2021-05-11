@@ -24,9 +24,9 @@
       <li class="tabOuter" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About<span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a class="borderInner" href="library-team.php">Library Team</a></li>
-          <li><a class="borderInner" href="#">Working Hours</a></li>
-          <li><a class="borderInner" href="#">Rules</a></li>
-  <li><a class="borderInner" href="#">Space</a></li>
+          <li><a class="borderInner" href="workinghrs.php">Working Hours</a></li>
+          <li><a class="borderInner" href="rules.php">Rules</a></li>
+  <li><a class="borderInner" href="space.php">Space</a></li>
   <li><a class="borderInner" href="#">Acquistion and Processing Team</a></li>
   <li><a href="#">Photo Gallery</a></li>
         </ul>
