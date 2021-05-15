@@ -111,6 +111,7 @@ include("include/header.php");
           <p>
             National Institute of Technology, Jamshedpur takes extreme pride in the fact that it has been occupying a unique position in imparting technological education to Indian youth. Since its inception, the institute has had a vision to provide quality technical education and to facilitate scientific and technological research, coupled with a mission to develop human potential to its zenith.
           </p>
+<div id="check"></div>
         </div> 
       </div>
     <div class="col-sm-3">
