@@ -251,9 +251,8 @@ button {
 }
 
 /*------counter code-------*/
-
 .counter-section {
-  margin: 5% auto;
+  margin: 3% auto;
   color: #fff;
   background-image: rgba(26, 26, 26, 0.98);
 }
@@ -292,6 +291,7 @@ button {
   width: 100%;
   height: 100%;
 }
+
 /* Card */
 .card {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
@@ -310,14 +310,9 @@ button {
     }
   }
 }
-.card-parent {
-  margin-bottom: 30%;
-}
-.card-parent :hover {
-  transform: scale(1.1);
-}
+
 .card :hover {
-  transform: scale(1);
+  transform: scale(1.1);
 }
 /* &:nth-child(2) {
     margin: 20px 0px;
