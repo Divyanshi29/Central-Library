@@ -215,7 +215,7 @@ include("include/header.php");
 
   <!-- Image card -->
 
-  <div class="card-parent">
+ <div class="card-parent">
   <div class="card">
 
   <!-- <div class="title">Standard</div> -->
@@ -274,12 +274,11 @@ include("include/header.php");
 
 </div>
 
-
     
 <!-------Counter start------->
 <div style="background-color:#8c92ac">
-<div class="container-fluid counter-bg">
-	<div class="container counter-section">
+<div class="container-fluid">
+  <div class="container counter-section">
         <div class="row text-center">
             <div class="col-sm-3 counter-box">
                 <div class="icon-box">
@@ -312,57 +311,58 @@ include("include/header.php");
         </div>
     </div>
 </div>
+</div>
 <!-------Counter end------->
 
 
 <!-------Footer  start------->
-
+<div style="background-color:#8c92ac">
 <div class="container-fluid footer">
 <div class="container">
-	<div class="row">
-		<div class="col-sm-4 wow fadeInUp" data-wow-duration="3s">
-			<div style="color: rgb(48, 36, 36);" class="footname">Site Map</div>
-			<a style="color: rgb(48, 36, 36);" href="index"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Home</a><br>
-			<a style="color: rgb(48, 36, 36);" href="about"><i class="fa fa-angle-double-right" aria-hidden="true"></i> About</a><br>
-			<a style="color: rgb(48, 36, 36);" href="course"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Services</a><br>
-			<a style="color: rgb(48, 36, 36);" href="gallery"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Resources</a><br>
-			<a style="color: rgb(48, 36, 36);" href="contact"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Contact</a>
-		</div>
-		<div class="col-sm-4 wow fadeInUp" data-wow-duration="3s">
-			<div style="color: rgb(48, 36, 36);" class="footname">Collaboration To</div>
-			<div style="opacity: 1;">
-				<img src="image/logo.png" class="logo" style="  -webkit-filter: invert(100%); color:black; filter: invert(100%); margin-left: 90px;">
-			</div>
-			
-		</div>
-		<div class="col-sm-4 wow fadeInUp" data-wow-duration="3s">
-			<div style="color: rgb(48, 36, 36);" class="footname">Address</div>
-			<p>
-				<table style="color: rgb(48, 36, 36);">
-					<tr>
-						<td valign="top" style="padding-right:10px;"><i class="fa fa-map-marker" aria-hidden="true"></i></td>
-						<td>
-							National Institute of Technology,<br> Jamshedpur<br>
-							 Adityapur, Jamshedpur, Jharkhand<br> 831014
-						</td>
-					</tr>
-					<tr>
-						<td style="padding-right:10px;"><i class="fa fa-phone" aria-hidden="true"></i>
-						</td>
-						<td>+91 8507107839</td>
-					</tr>
-					<tr>
-						<td style="padding-right:10px;"><i class="fa fa-envelope" aria-hidden="true"></i></td>
-						<td style="text-transform:lowercase;">kapil.kr909@gmail.com</td>
-					</tr>
-				</table>
-			</p>
+  <div class="row">
+    <div class="col-sm-4 wow fadeInUp" data-wow-duration="3s">
+      <div style="color: rgb(48, 36, 36);" class="footname">Site Map</div>
+      <a style="color: rgb(48, 36, 36);" href="index"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Home</a><br>
+      <a style="color: rgb(48, 36, 36);" href="about"><i class="fa fa-angle-double-right" aria-hidden="true"></i> About</a><br>
+      <a style="color: rgb(48, 36, 36);" href="course"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Services</a><br>
+      <a style="color: rgb(48, 36, 36);" href="gallery"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Resources</a><br>
+      <a style="color: rgb(48, 36, 36);" href="contact"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Contact</a>
+    </div>
+    <div class="col-sm-4 wow fadeInUp" data-wow-duration="3s">
+      <div style="color: rgb(48, 36, 36);" class="footname">Collaboration To</div>
+      <div style="opacity: 1;">
+        <img src="image/logo.png" class="logo" style="  -webkit-filter: invert(100%); color:black; filter: invert(100%); margin-left: 90px;">
+      </div>
+      
+    </div>
+    <div class="col-sm-4 wow fadeInUp" data-wow-duration="3s">
+      <div style="color: rgb(48, 36, 36);" class="footname">Address</div>
+      <p>
+        <table style="color: rgb(48, 36, 36);">
+          <tr>
+            <td valign="top" style="padding-right:10px;"><i class="fa fa-map-marker" aria-hidden="true"></i></td>
+            <td>
+              National Institute of Technology,<br> Jamshedpur<br>
+               Adityapur, Jamshedpur, Jharkhand<br> 831014
+            </td>
+          </tr>
+          <tr>
+            <td style="padding-right:10px;"><i class="fa fa-phone" aria-hidden="true"></i>
+            </td>
+            <td>+91 8507107839</td>
+          </tr>
+          <tr>
+            <td style="padding-right:10px;"><i class="fa fa-envelope" aria-hidden="true"></i></td>
+            <td style="text-transform:lowercase;">kapil.kr909@gmail.com</td>
+          </tr>
+        </table>
+      </p>
 
-			<div style="color: rgb(48, 36, 36);" class="visiter">
-				 Visitors :- 
-			</div>
-		</div>
-	</div>
+      <div style="color: rgb(48, 36, 36);" class="visiter">
+         Visitors :- 
+      </div>
+    </div>
+  </div>
 </div>
 </div>
 </div>
