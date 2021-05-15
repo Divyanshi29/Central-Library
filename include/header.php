@@ -35,9 +35,10 @@
 <li class="tabOuter" class="dropdown"><a class="borderOuter" class="dropdown-toggle" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
         <ul class="dropdown-menu">
             <li><a class="borderInner" href="#check">Facilities</a></li>
+ <li><a class="borderInner" href="https://nitjsr.irins.org/">Faculty Profiles</a></li>
           <li><a class="borderInner" href="feedbacks.php">Feedback</a></li>
           <li><a class="borderInner" href="#">Book Bank</a></li>
-  <li><a href="#">Recommend a Book</a></li>
+  <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScoQ8kPko6lyihRMhQHr04L3b6M0vqY5WkztGh_YGjOckP5JQ/viewform">Recommend a Book</a></li>
   
         </ul>
       </li>
