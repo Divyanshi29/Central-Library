@@ -45,8 +45,8 @@
 <li class="tabOuter" class="dropdown"><a class="borderOuter" class="dropdown-toggle" data-toggle="dropdown" href="#">Resources<span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a class="borderInner" href="Ebook.php">E-TextBooks</a></li>
-          <li><a class="borderInner" href="#">Online-Journals</a></li>
-          <li><a  href="#">Magazines</a></li>
+          <li><a class="borderInner" href="">Online-Journals</a></li>
+          <li><a  href="Magazines.php">Magazines</a></li>
   
         </ul>
       </li>
