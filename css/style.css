@@ -310,9 +310,14 @@ button {
     }
   }
 }
-
-.card :hover {
+.card-parent {
+  margin-bottom: 30%;
+}
+.card-parent :hover {
   transform: scale(1.1);
+}
+.card :hover {
+  transform: scale(1);
 }
 /* &:nth-child(2) {
     margin: 20px 0px;
@@ -366,7 +371,6 @@ button {
 .btn :hover {
   background: #f68657;
 }
-
 
 /* Font family */
 
