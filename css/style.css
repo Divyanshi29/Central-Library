@@ -310,14 +310,9 @@ button {
     }
   }
 }
-.card-parent {
-  margin-bottom: 30%;
-}
-.card-parent :hover {
-  transform: scale(1.1);
-}
+
 .card :hover {
-  transform: scale(1);
+  transform: scale(1.1);
 }
 /* &:nth-child(2) {
     margin: 20px 0px;
