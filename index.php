@@ -111,6 +111,7 @@ include("include/header.php");
           <p>
             National Institute of Technology, Jamshedpur takes extreme pride in the fact that it has been occupying a unique position in imparting technological education to Indian youth. Since its inception, the institute has had a vision to provide quality technical education and to facilitate scientific and technological research, coupled with a mission to develop human potential to its zenith.
           </p>
+<div id="check"></div>
         </div> 
       </div>
     <div class="col-sm-3">
@@ -213,13 +214,14 @@ include("include/header.php");
     </div> -->
 
   <!-- Image card -->
-  <div class="card-parent">
+
+ <div class="card-parent">
   <div class="card">
 
   <!-- <div class="title">Standard</div> -->
 
   <div class="icon">
-     <a href="https://www.google.com">
+     <a href="https://ndl.iitkgp.ac.in/index.php">
     <img src="image/jgate.jpg" width="400px"/></a>
     <!-- <svg enable-background="new 0 0 512 512" height="512px" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M468.493,101.637L371.955,5.098H159.57v77.231H43.724v424.769h308.923v-77.231h115.846V101.637z   M371.955,32.401l69.236,69.235h-69.236V32.401z M63.031,487.79V101.637h173.769v96.538h96.538V487.79H63.031z M256.108,109.632  l69.236,69.235h-69.236V109.632z M352.647,410.56V178.867l-96.538-96.538h-77.231V24.406h173.769v96.538h96.538V410.56H352.647z" fill="#37404D"/></svg> -->
   </div><!--/icon-->
@@ -268,14 +270,15 @@ include("include/header.php");
   <!-- <a href="#" class="btn">Check it out</a> -->
 
 </div><!--/card-->
-</div>
+  
 
+</div>
 
     
 <!-------Counter start------->
 <div style="background-color:#8c92ac">
-<div class="container-fluid counter-bg">
-	<div class="container counter-section">
+<div class="container-fluid">
+  <div class="container counter-section">
         <div class="row text-center">
             <div class="col-sm-3 counter-box">
                 <div class="icon-box">
@@ -308,57 +311,58 @@ include("include/header.php");
         </div>
     </div>
 </div>
+</div>
 <!-------Counter end------->
 
 
 <!-------Footer  start------->
-
+<div style="background-color:#8c92ac">
 <div class="container-fluid footer">
 <div class="container">
-	<div class="row">
-		<div class="col-sm-4 wow fadeInUp" data-wow-duration="3s">
-			<div style="color: rgb(48, 36, 36);" class="footname">Site Map</div>
-			<a style="color: rgb(48, 36, 36);" href="index"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Home</a><br>
-			<a style="color: rgb(48, 36, 36);" href="about"><i class="fa fa-angle-double-right" aria-hidden="true"></i> About</a><br>
-			<a style="color: rgb(48, 36, 36);" href="course"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Services</a><br>
-			<a style="color: rgb(48, 36, 36);" href="gallery"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Resources</a><br>
-			<a style="color: rgb(48, 36, 36);" href="contact"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Contact</a>
-		</div>
-		<div class="col-sm-4 wow fadeInUp" data-wow-duration="3s">
-			<div style="color: rgb(48, 36, 36);" class="footname">Collaboration To</div>
-			<div style="opacity: 1;">
-				<img src="image/logo.png" class="logo" style="  -webkit-filter: invert(100%); color:black; filter: invert(100%); margin-left: 90px;">
-			</div>
-			
-		</div>
-		<div class="col-sm-4 wow fadeInUp" data-wow-duration="3s">
-			<div style="color: rgb(48, 36, 36);" class="footname">Address</div>
-			<p>
-				<table style="color: rgb(48, 36, 36);">
-					<tr>
-						<td valign="top" style="padding-right:10px;"><i class="fa fa-map-marker" aria-hidden="true"></i></td>
-						<td>
-							National Institute of Technology,<br> Jamshedpur<br>
-							 Adityapur, Jamshedpur, Jharkhand<br> 831014
-						</td>
-					</tr>
-					<tr>
-						<td style="padding-right:10px;"><i class="fa fa-phone" aria-hidden="true"></i>
-						</td>
-						<td>+91 8507107839</td>
-					</tr>
-					<tr>
-						<td style="padding-right:10px;"><i class="fa fa-envelope" aria-hidden="true"></i></td>
-						<td style="text-transform:lowercase;">kapil.kr909@gmail.com</td>
-					</tr>
-				</table>
-			</p>
+  <div class="row">
+    <div class="col-sm-4 wow fadeInUp" data-wow-duration="3s">
+      <div style="color: rgb(48, 36, 36);" class="footname">Site Map</div>
+      <a style="color: rgb(48, 36, 36);" href="index"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Home</a><br>
+      <a style="color: rgb(48, 36, 36);" href="about"><i class="fa fa-angle-double-right" aria-hidden="true"></i> About</a><br>
+      <a style="color: rgb(48, 36, 36);" href="course"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Services</a><br>
+      <a style="color: rgb(48, 36, 36);" href="gallery"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Resources</a><br>
+      <a style="color: rgb(48, 36, 36);" href="contact"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Contact</a>
+    </div>
+    <div class="col-sm-4 wow fadeInUp" data-wow-duration="3s">
+      <div style="color: rgb(48, 36, 36);" class="footname">Collaboration To</div>
+      <div style="opacity: 1;">
+        <img src="image/logo.png" class="logo" style="  -webkit-filter: invert(100%); color:black; filter: invert(100%); margin-left: 90px;">
+      </div>
+      
+    </div>
+    <div class="col-sm-4 wow fadeInUp" data-wow-duration="3s">
+      <div style="color: rgb(48, 36, 36);" class="footname">Address</div>
+      <p>
+        <table style="color: rgb(48, 36, 36);">
+          <tr>
+            <td valign="top" style="padding-right:10px;"><i class="fa fa-map-marker" aria-hidden="true"></i></td>
+            <td>
+              National Institute of Technology,<br> Jamshedpur<br>
+               Adityapur, Jamshedpur, Jharkhand<br> 831014
+            </td>
+          </tr>
+          <tr>
+            <td style="padding-right:10px;"><i class="fa fa-phone" aria-hidden="true"></i>
+            </td>
+            <td>+91 8507107839</td>
+          </tr>
+          <tr>
+            <td style="padding-right:10px;"><i class="fa fa-envelope" aria-hidden="true"></i></td>
+            <td style="text-transform:lowercase;">kapil.kr909@gmail.com</td>
+          </tr>
+        </table>
+      </p>
 
-			<div style="color: rgb(48, 36, 36);" class="visiter">
-				 Visitors :- 
-			</div>
-		</div>
-	</div>
+      <div style="color: rgb(48, 36, 36);" class="visiter">
+         Visitors :- 
+      </div>
+    </div>
+  </div>
 </div>
 </div>
 </div>

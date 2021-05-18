@@ -23,7 +23,7 @@
       <li class="tabOuter" ><a class="borderOuter" href="index.php">Home</a></li>
       <li class="tabOuter" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About<span class="caret"></span></a>
         <ul class="dropdown-menu">
-        <li><a class="borderInner" href="#">Information</a></li>
+        <li><a class="borderInner" href="#">About Us</a></li>
           <li><a class="borderInner" href="library-team.php">Library Team</a></li>
           <li><a class="borderInner" href="workinghrs.php">Working Hours</a></li>
           <li><a class="borderInner" href="rules.php">Rules</a></li>
@@ -34,7 +34,8 @@
       </li>
 <li class="tabOuter" class="dropdown"><a class="borderOuter" class="dropdown-toggle" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
         <ul class="dropdown-menu">
-          
+            <li><a class="borderInner" href="#check">Facilities</a></li>
+ <li><a class="borderInner" href="https://nitjsr.irins.org/">Faculty Profiles</a></li>
           <li><a class="borderInner" href="feedbacks.php">Feedback</a></li>
           <li><a class="borderInner" href="bookbank.php">Book Bank</a></li>
   <li><a href="#">Recommend a Book</a></li>
@@ -44,8 +45,8 @@
 <li class="tabOuter" class="dropdown"><a class="borderOuter" class="dropdown-toggle" data-toggle="dropdown" href="#">Resources<span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a class="borderInner" href="Ebook.php">E-TextBooks</a></li>
-          <li><a class="borderInner" href="#">Online-Journals</a></li>
-          <li><a  href="#">Magazines</a></li>
+          <li><a class="borderInner" href="">Online-Journals</a></li>
+          <li><a  href="Magazines.php">Magazines</a></li>
   
         </ul>
       </li>
