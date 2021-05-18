@@ -5,7 +5,7 @@ include("include/main.php");
 
 <div class="container" style="width:60%;position: relative;">
 <img src="http://www.nitjsr.ac.in/gallery/Photos/Campus/library//IMG_7426.JPG" style="opacity: 0.65;width:100%;height:60%; margin-left:-10px;" alt="library photo">
-<h1 style="position:absolute;top:50px;color:blue;margin-left:210px;font-family:Sans-Serif;"><b>Acquisition & Processing Unit</b></h1><br>
+<h1 style="position:absolute;top:50px;color:red;margin-left:210px;font-family:Sans-Serif;"><b>Acquisition & Processing Unit</b></h1><br>
 <div class="row" style="position:absolute;top:150px;color:black;text-align:center;font-family:Sans-Serif;font-size:20px;padding:3px 70px 3px 50px;">
 <p ><b>This is situated on the top floor on the library. New arrivals of Books & Journals are processed. (Accessioning, Cataloguing & Classification) here before they are stocked in the stack room.</b>
 <ul>
