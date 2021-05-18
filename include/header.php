@@ -28,8 +28,8 @@
           <li><a class="borderInner" href="workinghrs.php">Working Hours</a></li>
           <li><a class="borderInner" href="rules.php">Rules</a></li>
   <li><a class="borderInner" href="space.php">Space</a></li>
-  <li><a class="borderInner" href="#">Acquistion and Processing Team</a></li>
-  <li><a href="#">Photo Gallery</a></li>
+  <li><a class="borderInner" href="acq&procunit.php">Acquistion and Processing Team</a></li>
+  <li><a href="photogal.php">Photo Gallery</a></li>
         </ul>
       </li>
 <li class="tabOuter" class="dropdown"><a class="borderOuter" class="dropdown-toggle" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
@@ -37,8 +37,8 @@
             <li><a class="borderInner" href="#check">Facilities</a></li>
  <li><a class="borderInner" href="https://nitjsr.irins.org/">Faculty Profiles</a></li>
           <li><a class="borderInner" href="feedbacks.php">Feedback</a></li>
-          <li><a class="borderInner" href="#">Book Bank</a></li>
-  <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScoQ8kPko6lyihRMhQHr04L3b6M0vqY5WkztGh_YGjOckP5JQ/viewform">Recommend a Book</a></li>
+          <li><a class="borderInner" href="bookbank.php">Book Bank</a></li>
+  <li><a href="#">Recommend a Book</a></li>
   
         </ul>
       </li>
