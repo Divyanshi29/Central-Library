@@ -28,8 +28,8 @@
           <li><a class="borderInner" href="workinghrs.php">Working Hours</a></li>
           <li><a class="borderInner" href="rules.php">Rules</a></li>
   <li><a class="borderInner" href="space.php">Space</a></li>
-  <li><a class="borderInner" href="#">Acquistion and Processing Team</a></li>
-  <li><a href="#">Photo Gallery</a></li>
+  <li><a class="borderInner" href="acq&procunit.php">Acquistion and Processing Team</a></li>
+  <li><a href="photogal.php">Photo Gallery</a></li>
         </ul>
       </li>
 <li class="tabOuter" class="dropdown"><a class="borderOuter" class="dropdown-toggle" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
