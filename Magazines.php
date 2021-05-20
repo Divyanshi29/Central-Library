@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Newspaper</title>
+
     <style>
       .Newspaper {
         position: relative;
@@ -101,7 +101,7 @@
         animation-duration: 1.5s;
       }
     </style>
-  </head>
+</head>
   <body>
     <h1 style="text-align: center">Newspaper</h1>
     <div class="Newspaper">
@@ -219,5 +219,7 @@
       </div>
     </div>
     <script></script>
-  </body>
+</body>
 </html>
+
+ 

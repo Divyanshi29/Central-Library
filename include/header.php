@@ -38,7 +38,7 @@
  <li><a class="borderInner" href="https://nitjsr.irins.org/">Faculty Profiles</a></li>
           <li><a class="borderInner" href="feedbacks.php">Feedback</a></li>
           <li><a class="borderInner" href="bookbank.php">Book Bank</a></li>
-  <li><a href="#">Recommend a Book</a></li>
+  <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScoQ8kPko6lyihRMhQHr04L3b6M0vqY5WkztGh_YGjOckP5JQ/viewform">Recommend a Book</a></li>
   
         </ul>
       </li>
