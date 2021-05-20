@@ -319,7 +319,10 @@ button {
 .card :hover {
   transform: scale(1);
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> master
 /* &:nth-child(2) {
     margin: 20px 0px;
     width: 33.3333%;

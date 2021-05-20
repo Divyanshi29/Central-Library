@@ -360,6 +360,12 @@ include("include/header.php");
 
       <div style="color: rgb(48, 36, 36);" class="visiter">
          Visitors :- 
+         <?php
+         include('Admin/comman/connect.php');
+          $res=$con->query("select * from visiter");
+          $row=mysqli_fetch_array($res);
+          echo $visit=$row['vcount'];
+        ?>
       </div>
     </div>
   </div>
