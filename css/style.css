@@ -319,10 +319,6 @@ button {
 .card :hover {
   transform: scale(1);
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> master
 /* &:nth-child(2) {
     margin: 20px 0px;
     width: 33.3333%;
@@ -372,7 +368,7 @@ button {
   transition: all 200ms ease-in-out;
   text-decoration: none;
 }
-.btn :hover {
+btn :hover {
   background: #f68657;
 }
 
