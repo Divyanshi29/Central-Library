@@ -1,11 +1,4 @@
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Newspaper</title>
     <style>
       .Newspaper {
         position: relative;
@@ -51,6 +44,10 @@
         -webkit-animation-duration: 1.5s;
         animation-name: fade;
         animation-duration: 1.5s;
+      }
+      .parent
+      {
+        margin-bottom:50px;
       }
 
       /* Magazines */
@@ -101,8 +98,7 @@
         animation-duration: 1.5s;
       }
     </style>
-  </head>
-  <body>
+  <div class="parent">
     <h1 style="text-align: center">Newspaper</h1>
     <div class="Newspaper">
       <!-- <button id="btnLeft" style="justify-content: left" onClick="plusDivs(-1)">
@@ -218,6 +214,6 @@
         <h1 class="textMagazine">Pratyogita Darpan</h1>
       </div>
     </div>
-    <script></script>
-  </body>
-</html>
+    </div>
+    <?php include("include/footerstrip.php"); ?>
+
