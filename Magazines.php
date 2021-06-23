@@ -1,3 +1,8 @@
+
+<?php
+include("include/main.php");
+include("include/header.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -52,9 +57,7 @@
         animation-name: fade;
         animation-duration: 1.5s;
       }
-
       /* Magazines */
-
       .Magazines {
         position: relative;
         text-align: center;
