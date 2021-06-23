@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.4
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 20, 2021 at 10:52 PM
--- Server version: 5.7.14
--- PHP Version: 5.6.25
+-- Generation Time: Jun 23, 2021 at 10:02 AM
+-- Server version: 10.4.18-MariaDB
+-- PHP Version: 8.0.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -19,6 +20,32 @@ SET time_zone = "+00:00";
 --
 -- Database: `central_library_jsr`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `registration`
+--
+
+CREATE TABLE `registration` (
+  `UserId` int(255) NOT NULL,
+  `Name` varchar(255) NOT NULL,
+  `Email` varchar(255) NOT NULL,
+  `Password` varchar(255) NOT NULL,
+  `Confirmpassword` varchar(255) NOT NULL,
+  `Type` varchar(255) NOT NULL,
+  `Branch` varchar(255) NOT NULL,
+  `Regno` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `registration`
+--
+
+INSERT INTO `registration` (`UserId`, `Name`, `Email`, `Password`, `Confirmpassword`, `Type`, `Branch`, `Regno`) VALUES
+(1, 'Megha', 'meghaagrwal.18@gmail.com', '123456', '123456', 'user', '', 'MCA'),
+(2, 'Megha', 'meghaagrwal.18@gmail.com', '123456', '123456', 'user', 'MCA', '2019pgcaca'),
+(4, 'kapil ', 'kapil.kr09@gmail.com', '12345', '12345', 'user', 'MCA', '2019PGCACA');
 
 -- --------------------------------------------------------
 
@@ -43,10 +70,27 @@ INSERT INTO `visiter` (`vid`, `vcount`) VALUES
 --
 
 --
+-- Indexes for table `registration`
+--
+ALTER TABLE `registration`
+  ADD PRIMARY KEY (`UserId`);
+
+--
 -- Indexes for table `visiter`
 --
 ALTER TABLE `visiter`
   ADD PRIMARY KEY (`vid`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `registration`
+--
+ALTER TABLE `registration`
+  MODIFY `UserId` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
