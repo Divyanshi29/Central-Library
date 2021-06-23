@@ -2,9 +2,7 @@
 
 <!-- header part -->
 
-    
-<?php
-
+    <?php
 include("include/main.php");
 include("include/header.php");
 //include("include/content.php");

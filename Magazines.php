@@ -1,3 +1,8 @@
+
+<?php
+include("include/main.php");
+include("include/header.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
