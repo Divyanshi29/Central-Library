@@ -53,17 +53,17 @@
       </ul>
       
    <ul class="nav navbar-nav navbar-right">
-      <li class="tabOuter" class="dropdown"><a class="borderOuter" class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> Sign Up <span  class="caret"></span></a>
-          <ul class="dropdown-menu">
+      <li class="tabOuter" class="dropdown"><a class="borderOuter" href="Registration.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+          <!-- <ul class="dropdown-menu">
           <li><a class="borderInner" href="#">Admin</a></li>
           <li><a  href="#">Student</a></li>
-          </ul>
+          </ul> -->
           </li>
-          <li class="tabOuter" class="dropdown"><a class="borderOuter" class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-log-in"></span> Login <span  class="caret"></span></a>
-          <ul class="dropdown-menu">
+          <li class="tabOuter" class="dropdown"><a class="borderOuter"  href="SignIn.php"><span class="glyphicon glyphicon-log-in"></span> Login </a>
+          <!-- <ul class="dropdown-menu">
           <li><a class="borderInner" href="#">Admin</a></li>
           <li><a  href="#">Student</a></li>
-          </ul>
+          </ul> -->
           </li>
      <!--<li class="dropdown"><a  class="dropdown-toggle" data-toggle="dropdowm" href="#"><span class="glyphicon glyphicon-log-in" class="caret"></span> Login</a>
         <ul class="dropdown-menu">
