@@ -5,8 +5,8 @@ include('include/main.php');
 include('include/header.php');
 ?>
 <style>
-    form, .content {
-  width: 30%;
+form, .content {
+  width: 40%;
   margin: 0px auto;
   padding: 20px;
   border: 1px solid #B0C4DE;
@@ -14,7 +14,8 @@ include('include/header.php');
   border-radius: 0px 0px 10px 10px;
 }
 .input-group {
-  margin: 10px 0px 10px 80px;
+    width: 80%;
+  margin: 10px 0px 10px 50px;
 }
 .input-group label {
   display: block;
@@ -23,7 +24,7 @@ include('include/header.php');
 }
 .input-group input {
   height: 30px;
-  width: 120%;
+  width: 100%;
   padding: 5px 10px;
   font-size: 16px;
   border-radius: 5px;
@@ -55,38 +56,37 @@ include('include/header.php');
 }
 .input-group select
 {
-    width:260px;
+    width:100%;
     height:30px;
     border-radius: 5px;
     border: 1px solid gray;
 }
-    </style>
+</style>
 
-
-
-
-
-
+   
   <form method="post" action="validate.php">
+    <div style="text-align: center; text-size:18px;color: rgb(25, 33, 99);">
+       <h3>User Registration Form</h3>
+   </div>
   	<div class="input-group">
   	  <label>Name</label>
-  	  <input type="text" name="name" value="">
+  	  <input type="text" name="name" placeholder="Enter Name Here" required minlength="3">
   	</div>
   	<div class="input-group">
   	  <label>Email</label>
-  	  <input type="email" name="email" value="">
+  	  <input type="email" name="email" placeholder="Enter Email Here" required>
   	</div>
   	<div class="input-group">
   	  <label>Password</label>
-  	  <input type="password" name="password">
+  	  <input type="password" name="password" placeholder="Enter Password Here" required minlength="8">
   	</div>
   	<div class="input-group">
   	  <label>Confirm password</label>
-  	  <input type="password" name="cpassword">
+  	  <input type="password" name="cpassword" placeholder="Enter Confirm Password Here" required minlength="8">
   	</div>
     <div class="input-group">
   	 <label for="type">User</label>
-            <select name="type" >
+            <select name="type" required>
                 <option value="none" selected disabled hidden>Select an Option</option>
                 <option value="teacher">Faculty</option>
                 <option value="student">Student</option>
@@ -94,11 +94,11 @@ include('include/header.php');
   	</div>
     <div class="input-group">
   	  <label>Registration Number</label>
-  	  <input type="text" name="regno">
+  	  <input type="text" name="regno" placeholder="Enter Registration Number Here" required>
   	</div>
     <div class="input-group">
   	   <label for="branch">Branch</label>
-            <select  name="branch">
+            <select  name="branch" required>
                 <option value="none" selected disabled hidden>Select an Option</option>
                 <option value="Chemistry">Chemistry</option>
                 <option value="Civil Engineering">Civil Engineering</option>
@@ -115,11 +115,11 @@ include('include/header.php');
             </select>
   	</div>
   	<div class="input-group">
-  	  <button type="submit" class="btn" name="reg_user">Register</button>
+  	  <button type="submit" class="btn" name="reg_user" style="float: left;">Register</button>
+      <p style="float: left; margin: 30px 0 0 20px;">
+        Already a member? <a href="SignIn.php">Sign in</a>
+      </p>
   	</div>
-  	<p>
-  		Already a member? <a href="SignIn.php">Sign in</a>
-  	</p>
   </form>
   
      
