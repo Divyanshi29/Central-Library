@@ -9,12 +9,11 @@ include('include/header.php');
 
 <?php  
 // define variables to empty values  
-$nameErr = $emailErr = $branchErr = $typeErr = $passSameErr =  $passErr =  $regError="";  
+$nameErr = $emailErr = $branchErr = $typeErr = $passSameErr =  $passErr = $otpErr =  $regError="";  
 
    
 //Input fields validation  
 if ($_SERVER["REQUEST_METHOD"] == "POST") {  
-      
 //String Validation  
     if (empty($_POST["name"])) {  
          $nameErr = "Name is required";  
@@ -64,8 +63,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //Password and Confirm Password equal or not
     if($_POST['password'] == $_POST['cpassword'])
     {
-       $password = $_POST['password'];
-       $cpassword = $_POST['cpassword'];
+      $password = $_POST['password'];
+      $cpassword = $_POST['cpassword'];
+      $password = password_hash($password, PASSWORD_DEFAULT);
+      $cpassword = $password;
+       
     }
     else
     {
@@ -73,9 +75,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     $regno = $_POST['regno'];
-
     
-}  
+	}
+
+  
 function input_data($data) {  
   $data = trim($data);  
   $data = stripslashes($data);  
@@ -153,8 +156,9 @@ form, .content {
   	<div class="input-group">
   	  <label>Email<span class="error">* <?php echo $emailErr; ?> </span></label>   
   	  <input type="email" name="email" placeholder="Enter Email Here" required>
-      
-  	</div>
+      <input type="text" name="otp" placeholder="One Time Password" required>
+      <button type="submit" class="btn" name="check" style="float: left;">Verify</button>
+    </div>
   	<div class="input-group">
   	  <label>Password<span class="error">* <?php echo $passErr; ?></label>
   	  <input type="password" name="password" placeholder="Enter Password Here" required minlength="8">
@@ -209,19 +213,39 @@ form, .content {
   	</div>
   </form>
   <?php
+// Otp verification 
 
+
+if(isset($_POST['check']))
+{
+   
+}
+                  
+                 
 if(isset($_POST['reg_user']))
 {
-if($nameErr == ""&& $emailErr ==""&& $branchErr ==""&& $typeErr ==""&& $passSameErr == ""){
-    $query = "INSERT INTO `registration` (`UserId`, `Name`, `Email`, `Password`, `Confirmpassword`, `Type`, `Branch`, `Regno`) VALUES (default,'$name','$email','$password','$cpassword','$type','$branch','$regno')";
-    $result = mysqli_query($con,$query);
-    echo "<script>alert('Registration Successful')</script>";
+if($nameErr == ""&& $emailErr ==""&& $branchErr ==""&& $typeErr ==""&& $passSameErr == "" && $otpErr=="")
+{
+    $query1 = "SELECT * FROM `registration` WHERE `Email` = '$email'";
+    $result1 = mysqli_query($con,$query1);
+    if($result1->num_rows==0){
+      $query = "INSERT INTO `registration` (`UserId`, `Name`, `Email`, `Password`, `Confirmpassword`, `Type`, `Branch`, `Regno`) VALUES (default,'$name','$email','$password','$cpassword','$type','$branch','$regno')";
+      $result = mysqli_query($con,$query);
+      echo "<script>alert('Registration Successful')</script>";
+      echo '<script language="javascript">window.location="SignIn.php";</script>';
+    }
+    else
+    {
+       echo "<script>alert('This Email Id already exists')</script>";
+        echo '<script language="javascript">window.location="SignIn.php";</script>';
+    }
+
+    
 }
  else {  
-
-        echo "<script>alert('You didn't filled up the form correctly.')</script>";  
+      echo "<script>alert('You didn't filled up the form correctly.')</script>";  
     } 
-  } 
+} 
 
 
    
