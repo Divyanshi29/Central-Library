@@ -14,7 +14,8 @@ include('include/header.php');
   border-radius: 0px 0px 10px 10px;
 }
 .input-group {
-  margin: 10px 0px 10px 80px;
+  width: 100%;
+  margin: 10px;
 }
 .input-group label {
   display: block;
@@ -23,7 +24,7 @@ include('include/header.php');
 }
 .input-group input {
   height: 30px;
-  width: 120%;
+  width: 90%;
   padding: 5px 10px;
   font-size: 16px;
   border-radius: 5px;
@@ -54,16 +55,20 @@ include('include/header.php');
   margin-bottom: 20px;
 }
 </style>
-<div style = "height:490px;">
+<div style = "min-height:500px;">
   <form method="post" action="#">
+    <div>
+      <h3 align="center">Admin Login Form</h3>
+    </div>
   	<div class="input-group">
   	  <label>Email</label>
-  	  <input type="email" name="email" value="">
+  	  <input type="email" name="email">
   	</div>
   	<div class="input-group">
   	  <label>Password</label>
   	  <input type="password" name="password">
   	</div>
+    <div id="error"></div>
   	<div class="input-group">
   	  <button type="submit" class="btn" name="sig_user">Sign In</button>
   	</div>
@@ -77,14 +82,25 @@ if(isset($_POST['sig_user']))
 {
 
     extract($_POST);
-    $query = "SELECT * FROM `registration` WHERE Email = '$email' and Password ='$password'"; ;
-    $result = mysqli_query($con,$query);
-    if($result){
-        echo "<script>alert('Login Successful')</script>";
-
-    }
-    else{
-      echo "<script>alert('User not registered')</script>";
+     $sql="select * from registration where email='$email' and password='$password'";
+     echo $sql;
+    $result1 = mysqli_query($con,$sql);
+      if($result1->num_rows==0)
+      {?>
+        <script type="text/javascript">
+          document.getElementById('error').innerHTML="Worng UserId and Password";
+          error.style.padding = "10px";
+          error.style.color = "#FFF";
+          error.style.background = "red";
+          error.style.border = "1px solid red";
+        </script>
+      <?php
+      }
+      else{
+        session_start();
+        $_SESSION['sesuser']=$email;
+      echo "<script>alert('Login Successful')</script>";
+        echo '<script language="javascript">window.location="home.php";</script>';
     }
 }
     include("include/footerstrip.php");
