@@ -1,4 +1,4 @@
-<?php require('Admin/comman/connect.php'); ?>
+<?php require('comman/connect.php'); ?>
 
 <?php
 include('include/main.php');
