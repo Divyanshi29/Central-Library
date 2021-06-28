@@ -14,11 +14,7 @@ $data=mysqli_fetch_array($result);
 <!DOCTYPE html>
 <html>
 <head>
-<<<<<<< HEAD
 	<title>:: NIT jsr</title>
-=======
-	<title>:: BPC</title>
->>>>>>> origin/master
 	<link rel="stylesheet" type="text/css" href="css/style1.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
@@ -63,13 +59,9 @@ $data=mysqli_fetch_array($result);
 			<div class="one"><i class="fa fa-user-plus"></i></div>
 			<div class="two">
 				<?php
-<<<<<<< HEAD
+
                    $u=$con->query("select * from registration");
                    echo $uu=mysqli_num_rows($u);
-=======
-                 //  $u=$con->query("select * from account1");
-                 //  echo $uu=mysqli_num_rows($u);
->>>>>>> origin/master
                 ?>
 			</div>
 			<div class="three">Users</div>
@@ -82,13 +74,8 @@ $data=mysqli_fetch_array($result);
 			<div class="one"><i class="fa fa-user-plus"></i></div>
 			<div class="two">
 				<?php
-<<<<<<< HEAD
                    $u=$con->query("select * from registration ");
                    echo $uu=mysqli_num_rows($u);
-=======
-                //   $u=$con->query("select * from account1 where status='YES'");
-                //   echo $uu=mysqli_num_rows($u);
->>>>>>> origin/master
                 ?>
 			</div>
 			<div class="three">Users</div>
@@ -101,8 +88,8 @@ $data=mysqli_fetch_array($result);
 			<div class="one"><i class="fa fa-file-audio-o"></i></div>
 			<div class="two">
 				<?php
-                 //  $n=$con->query("select * from news");
-                 //  echo $ns=mysqli_num_rows($n);
+                   $n=$con->query("select * from news");
+                   echo $ns=mysqli_num_rows($n);
                 ?>
 			</div>
 			<div class="three">News</div>
