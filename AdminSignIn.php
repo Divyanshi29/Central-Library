@@ -83,7 +83,6 @@ if(isset($_POST['sig_user']))
 
     extract($_POST);
      $sql="select * from registration where email='$email' and password='$password'";
-     echo $sql;
     $result1 = mysqli_query($con,$sql);
       if($result1->num_rows==0)
       {?>
@@ -99,7 +98,7 @@ if(isset($_POST['sig_user']))
       else{
         session_start();
         $_SESSION['sesuser']=$email;
-      echo "<script>alert('Login Successful')</script>";
+        echo "<script>alert('Login Successful')</script>";
         echo '<script language="javascript">window.location="home.php";</script>';
     }
 }
