@@ -46,7 +46,7 @@
 						<li><a href="assignmentshow.php">Show Assignment</a></li>
 					</ul>
 				</li>
-				<li><a href="">Batch <i class="fa fa-angle-down"></i></a>
+				<li><a href="">Library Team <i class="fa fa-angle-down"></i></a>
 					<ul>
 						<li><a href="batchcreate.php">Create Batch</a></li>
 						<li><a href="batchshow.php">Show Batch</a></li>
