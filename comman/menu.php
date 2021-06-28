@@ -5,18 +5,18 @@
 <div class="top">
 	<div class="topmain">
 		<div class="logo">
-			<img src="../images/logo.png">
+			<img src="image/logo.png" height="70" width="60" style="background-color: #1f4580; margin: 10px;">
 		</div>
 		<div class="menu">
 			<ul>
-				<li class="account"><img src="images/<?php echo $data['images'];?>">
+				<li class="account"><img src="image/logo.png" style="background-color: #1f4580;">
 					<ul>
 						<li><a href="changepsw.php">Change PSW</a></li>
 						<li><a href="setting.php">Setting</a></li>
 						<li><a href="logout.php">Log Out</a></li>
 					</ul>
 				</li>
-				<li><a href="">Contact (<?php echo $con_count;?>) <i class="fa fa-angle-down"></i></a>
+				<li><a href="">Contact <i class="fa fa-angle-down"></i></a>
 					<ul>
 						<li><a href="inbox.php">Inbox</a></li>
 						<li><a href="sentmail.php">Sent Mail</a></li>

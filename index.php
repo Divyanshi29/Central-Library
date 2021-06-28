@@ -120,20 +120,14 @@ include("include/header.php");
       </div>
       <marquee direction="up" scrollamount="4" onmouseover="this.stop()" onmouseout="this.start()" style="height:280px; cursor: pointer;">
         <ul>
-          <li><a href="www.google.com">news1</a></li>
-          <li><a href="www.google.com">news1</a></li>
-          <li><a href="www.google.com">news1</a></li>
-          <li><a href="www.google.com">news1</a></li>
-          <li><a href="www.google.com">news1</a></li>
-          <li><a href="www.google.com">news1</a></li>
-          <li><a href="www.google.com">news1</a></li>
-          <li><a href="www.google.com">news1</a></li>
-          <li><a href="www.google.com">news1</a></li>
-          <li><a href="www.google.com">news1</a></li>
-          <li><a href="www.google.com">news1</a></li>
-          <li><a href="www.google.com">news1</a></li>
-          <li><a href="www.google.com">news1</a></li>
-          <li><a href="www.google.com">news1</a></li>
+          <?php 
+            include('comman/connect.php');
+            $res=$con->query("select * from news order by(nid) desc");
+            while($row=mysqli_fetch_array($res))
+            {
+              echo "<li>".$row['news']."</li>";
+            }
+          ?>
         </ul>
       </marquee>
     </div>
