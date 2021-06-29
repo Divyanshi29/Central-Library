@@ -1,26 +1,33 @@
 <?php
 
-if($row)
-                    { ?>
-                        <script type="text/javascript">
-                            document.getElementById('error3').innerHTML="Already Exit Email Address";
-                            error3.style.padding = "20px";
-                            error3.style.color = "red";
-                            error3.style.background="blue";
-                            error3.style.border = "1px solid red";
-                        </script>
-                    <?php 
-                    }
-                    else
-                    { 
-                        if($password!=$cpassword){
-                            ?>
-                            <script type="text/javascript">
-                            document.getElementById('error3').innerHTML="Confirm Password Not Match!";
-                            error3.style.padding = "20px";
-                            error3.style.color = "red";
-                            error3.style.background="blue";
-                            error3.style.border = "1px solid red";
-                            </script>
-                }
+if(isset($_POST['check']))
+{
+  $rndno=rand(100000, 999999);//OTP generate
+   $to = $_POST['email'];
+   $sub = "This is an otp verification";
+   $headers = "From:magarwal.18april@gmail.com";
+   $message = "This is the otp".$rndno."";
+   echo "<script>console.log($to)</script>";
+   if(mail($to,$sub,$message,$headers)){
+     echo "<script> alert('Email Sent')</script>";
+     
+    
+   }
+  else{
+    echo "<script> alert('Email  Not Sent')</script>";
+  }
+}
+if(isset($_POST['verify']))
+{
+     if($_POST['otp']==$rndno)
+     {
+       echo "Email Verfied";
+     }
+     else
+     {
+       echo "Otp is wrong";
+     }
+}
+
+?>
 

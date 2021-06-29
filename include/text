@@ -1,8 +1,0 @@
-<?php  
-          //   include('bpc/comman/connect.php');
-          //   $res=$con->query("select * from news order by(nid) desc");
-          //   while($row=mysqli_fetch_array($res))
-          //   {
-          //     echo "<li>".$row['news']."</li>";
-          //   }
-          // ?> 
