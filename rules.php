@@ -14,7 +14,7 @@ include("include/main.php");
 <li>Books removed from the shelves by students, if not required for reference, should be kept on the book trolley or on table nearest to them. Please do not try to shelve them yourself. Please remember that a book misplaced is a book lost.</li>
 <li>The newspaper(s) should be folded properly after reading and kept back in the designated place.</li>
 <li>Readers should not deface, mark, cut, mutilate or damage library resources in any way. If anyone is found doing so, he will be charged the full replacement cost of the resource.</li>
-<li>Borrowers, faculty, staff going on the leave with or without salary, deputation, study leave will have to return all borrowed material before leaving NITK Surathkal.</li>
+<li>Borrowers, faculty, staff going on the leave with or without salary, deputation, study leave will have to return all borrowed material before leaving NIT JSR.</li>
 <li>The “PASS OUT” slip should be handed over to the security guard at the checkpoint before taking out the issued book/s.</li>
 <li>There will be a fine of Rs. 1.00 per General Shelf book per day.</li>
 <li>For the loss of Library Card, a fine of Rs.20/- each will be charged.</li>
