@@ -9,7 +9,7 @@ include('include/header.php');
 
 <?php  
 // define variables to empty values  
-$nameErr = $emailErr = $branchErr = $typeErr = $passSameErr =  $passErr = $otpErr =  $regError="";  
+$nameErr = $branchErr = $typeErr = $passSameErr =  $passErr = $otpErr =  $regError="";  
 
    
 //Input fields validation  
@@ -26,15 +26,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }  
       
     //Email Validation   
-    if (empty($_POST["email"])) {  
-            $emailErr = "Email is required";  
-    } else {  
-            $email = input_data($_POST["email"]);  
-            // check that the e-mail address is well-formed  
-            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {  
-                $emailErr = "Invalid email format";  
-            }  
-     }  
+    // if (empty($_POST["email"])) {  
+    //         $emailErr = "Email is required";  
+    // } else {  
+    //         $email = input_data($_POST["email"]);  
+    //         // check that the e-mail address is well-formed  
+    //         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {  
+    //             $emailErr = "Invalid email format";  
+    //         }  
+    //  }  
       
        
       if (empty ($_POST["type"])) {  
@@ -50,15 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       }
       
       
-    $allowedDomains = array('nitjsr.ac.in');
-    list($user, $domain) = explode('@', $_POST['email']);
-    if (checkdnsrr($domain, 'MX') && in_array($domain, $allowedDomains))
-    {
-        $email = $_POST['email'];
-    }
-    else{
-        $emailErr = "Please Use Institue Email Id Only";
-    }
+    
       
     //Password and Confirm Password equal or not
     if($_POST['password'] == $_POST['cpassword'])
@@ -75,6 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     $regno = $_POST['regno'];
+    $email = $_POST['email'];
     
 	}
 
@@ -143,8 +136,18 @@ form, .content {
 
 </style>
 
+  <head> 
+  <script>
+   var a = localStorage.getItem("Email");
+   function myFunction(){
+        document.getElementById('emailid').value = a;
+   } 
+   </script>
+
    
-  <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+     </head>
+   <body onload="myFunction()">
+  <form name="myForm" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
     <div style="text-align: center; text-size:18px;color: rgb(25, 33, 99);">
        <h3>User Registration Form</h3>
    </div>
@@ -154,26 +157,24 @@ form, .content {
      
   	</div>
   	<div class="input-group">
-  	  <label>Email<span class="error">* <?php echo $emailErr; ?> </span></label>   
-  	  <input type="email" name="email" placeholder="Enter Email Here" required>
-      <input type="text" name="otp" placeholder="One Time Password" required>
-      <button type="submit" class="btn" name="check" style="float: left;">Verify</button>
+  	  <label>Email</label>   
+  	  <input type="email" name="email" id="emailid"  readonly>
     </div>
   	<div class="input-group">
   	  <label>Password<span class="error">* <?php echo $passErr; ?></label>
-  	  <input type="password" name="password" placeholder="Enter Password Here" required minlength="8">
+  	  <input type="password" name="password" placeholder="Enter Password Here"  minlength="8" required>
       
   	</div>
   	<div class="input-group">
   	  <label>Confirm  <span class="error">* <?php echo $passSameErr; ?> </span> </label>
       
-  	  <input type="password" name="cpassword" placeholder="Enter Confirm Password Here" required minlength="8">
+  	  <input type="password" name="cpassword" placeholder="Enter Confirm Password Here"  minlength="8" required>
        
   	</div>
     <div class="input-group">
   	 <label for="type">User<span class="error">* <?php echo $typeErr; ?> </span> </label>
       
-            <select name="type" required>
+            <select name="type" required >
                 <option value="none" selected disabled hidden>Select an Option</option>
                 <option value="teacher">Faculty</option>
                 <option value="student">Student</option>
@@ -182,13 +183,13 @@ form, .content {
   	</div>
     <div class="input-group">
   	  <label>Registration Number<span class="error">* <?php echo $regError; ?></label>
-  	  <input type="text" name="regno" placeholder="Enter Registration Number Here" required>
+  	  <input type="text" name="regno" placeholder="Enter Registration Number Here" >
   	</div>
     <div class="input-group">
       
   	   <label for="branch">Branch<span class="error">* <?php echo $branchErr; ?> </span>  </label>
        
-            <select  name="branch" required>
+            <select  name="branch" >
                 <option value="none" selected disabled hidden>Select an Option</option>
                 <option value="Chemistry">Chemistry</option>
                 <option value="Civil Engineering">Civil Engineering</option>
@@ -206,49 +207,42 @@ form, .content {
             
   	</div>
   	<div class="input-group">
-  	  <button type="submit" class="btn" name="reg_user" style="float: left;">Register</button>
+  	  <button type="submit" class="btn" name="register" style="float: left;">Register</button>
       <p style="float: left; margin: 30px 0 0 20px;">
         Already a member? <a href="SignIn.php">Sign in</a>
       </p>
   	</div>
   </form>
+  </body>
   <?php
-// Otp verification 
 
-
-if(isset($_POST['check']))
+if(isset($_POST['register']))
 {
-   
-}
-                  
-                 
-if(isset($_POST['reg_user']))
-{
-if($nameErr == ""&& $emailErr ==""&& $branchErr ==""&& $typeErr ==""&& $passSameErr == "" && $otpErr=="")
-{
-    $query1 = "SELECT * FROM `registration` WHERE `Email` = '$email'";
-    $result1 = mysqli_query($con,$query1);
-    if($result1->num_rows==0){
-      $query = "INSERT INTO `registration` (`UserId`, `Name`, `Email`, `Password`, `Confirmpassword`, `Type`, `Branch`, `Regno`) VALUES (default,'$name','$email','$password','$cpassword','$type','$branch','$regno')";
-      $result = mysqli_query($con,$query);
-      echo "<script>alert('Registration Successful')</script>";
-      echo '<script language="javascript">window.location="SignIn.php";</script>';
-    }
-    else
+    if($nameErr == ""&& $branchErr ==""&& $typeErr ==""&& $passSameErr == "" && $otpErr=="")
     {
-       echo "<script>alert('This Email Id already exists')</script>";
-        echo '<script language="javascript">window.location="SignIn.php";</script>';
-    }
-
     
-}
- else {  
-      echo "<script>alert('You didn't filled up the form correctly.')</script>";  
-    } 
-} 
+        //$email = $_GET['data'];
+        //echo $email;
+        $query1 = "SELECT * FROM `registration` WHERE `Email` = '$email'";
+        $result1 = mysqli_query($con,$query1);
+        if($result1->num_rows==0){
+          $query = "INSERT INTO `registration` (`UserId`, `Name`, `Email`, `Password`, `Confirmpassword`, `Type`, `Branch`, `Regno`) VALUES (default,'$name','$email','$password','$cpassword','$type','$branch','$regno')";
+          $result = mysqli_query($con,$query);
+          echo "<script>alert('Registration Successful')</script>";
+          echo '<script language="javascript">window.location="SignIn.php";</script>';
+        }
+        else
+        {
+          echo "<script>alert('This Email Id already exists')</script>";
+            echo '<script language="javascript">window.location="SignIn.php";</script>';
+        }
 
-
-   
+        
+    }
+    else {  
+          echo "<script>alert('You didn't filled up the form correctly.')</script>";  
+        } 
+}   
 ?>
   <?php
   include("include/footerstrip.php");?>

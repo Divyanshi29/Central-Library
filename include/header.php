@@ -53,7 +53,7 @@
       </ul>
       
    <ul class="nav navbar-nav navbar-right">
-      <li class="tabOuter" class="dropdown"><a class="borderOuter" href="Registration.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+      <li class="tabOuter" class="dropdown"><a class="borderOuter" href="RegistrationOtp.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
           <!-- <ul class="dropdown-menu">
           <li><a class="borderInner" href="#">Admin</a></li>
           <li><a  href="#">Student</a></li>
