@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 23, 2021 at 10:02 AM
+-- Generation Time: Jun 29, 2021 at 01:34 PM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.5
 
@@ -43,9 +43,8 @@ CREATE TABLE `registration` (
 --
 
 INSERT INTO `registration` (`UserId`, `Name`, `Email`, `Password`, `Confirmpassword`, `Type`, `Branch`, `Regno`) VALUES
-(1, 'Megha', 'meghaagrwal.18@gmail.com', '123456', '123456', 'user', '', 'MCA'),
-(2, 'Megha', 'meghaagrwal.18@gmail.com', '123456', '123456', 'user', 'MCA', '2019pgcaca'),
-(4, 'kapil ', 'kapil.kr09@gmail.com', '12345', '12345', 'user', 'MCA', '2019PGCACA');
+(25, 'Abhilasha pathak', '2019pgcaca02@nitjsr.ac.in', '$2y$10$fbWE7KDVL85XiUFzmDspUO0T8BHjohNQZ5gpnlutbBIuCHqpihtJe', '$2y$10$fbWE7KDVL85XiUFzmDspUO0T8BHjohNQZ5gpnlutbBIuCHqpihtJe', 'student', 'Computer Applications', '2019pgcaca02'),
+(26, 'Megha Agarwal', '2019pgcaca54@nitjsr.ac.in', '$2y$10$g0blkWQIySwSvQRzvxLRqODz.JlWIyyVikWY5gMdY/s38EwIxihwG', '$2y$10$g0blkWQIySwSvQRzvxLRqODz.JlWIyyVikWY5gMdY/s38EwIxihwG', 'student', 'Computer Applications', '2019pgcaca54');
 
 -- --------------------------------------------------------
 
@@ -89,7 +88,7 @@ ALTER TABLE `visiter`
 -- AUTO_INCREMENT for table `registration`
 --
 ALTER TABLE `registration`
-  MODIFY `UserId` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `UserId` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
