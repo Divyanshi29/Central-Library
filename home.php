@@ -1,5 +1,8 @@
 <?php
 session_start();
+include('comman/menu.php');
+include('comman/style1.php'); 
+
 $sesuser=$_SESSION['sesuser'];
 if(!$sesuser)
     header("location:logout.php");
@@ -8,21 +11,8 @@ include('comman/connect.php');
 $sql="select * from registration where email='$sesuser'";
 $result = mysqli_query($con,$sql);
 $data=mysqli_fetch_array($result);
-    
-
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>:: NIT jsr</title>
-	<link rel="stylesheet" type="text/css" href="css/style1.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
 
-<?php include('comman/menu.php');?>
 
 <div class="main">
 	<div class="profile">
@@ -123,5 +113,3 @@ $data=mysqli_fetch_array($result);
 </div>
 
 <?php include('comman/footer.php');?>
-</body>
-</html>
