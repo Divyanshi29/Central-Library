@@ -60,7 +60,6 @@
 				</li>
 				<li><a href="">Services <i class="fa fa-angle-down"></i></a>
 					<ul>
-						<li><a href="galleryadd.php">Feedback</a></li>
 						<li><a href="galleryshow.php">Recommend a book</a></li>
 					</ul>
 				</li>
@@ -71,18 +70,12 @@
 						<li><a href="galleryshow.php">Magzines</a></li>
 					</ul>
 				</li>
-				<li><a href="">About <i class="fa fa-angle-down"></i></a>
+				<li><a href="#">About <i class="fa fa-angle-down"></i></a>
 					<ul>
-						<li><a href="galleryadd.php">Working Hour</a></li>
-						<li><a href="galleryshow.php">Photo Gallery</a></li>
+						<li><a href="whr.php">Working Hour</a></li>
 					</ul>
 				</li>
-				<li><a href="Admin/createbatch.php">Library Team <i class="fa fa-angle-down"></i></a>
-				<ul>
-						<li><a href="libcom.php">Library Committe</a></li>
-						<li><a href="libstaff.php">Library Staff</a></li>
-					</ul>
-				</li>
+				<li><a href="libcom.php">Library Team </a></li>
 				<li><a href="home.php">Home</a></li>
 			</ul>
 		</div>
