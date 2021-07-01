@@ -1,0 +1,3 @@
+#This is 404 Error Page to Show
+
+ErrorDocument 404 http://localhost/Central-Library/404.php
