@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 29, 2021 at 01:34 PM
+-- Generation Time: Jun 29, 2021 at 04:30 PM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.5
 
@@ -20,6 +20,57 @@ SET time_zone = "+00:00";
 --
 -- Database: `central_library_jsr`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `news`
+--
+
+CREATE TABLE `news` (
+  `nid` int(11) NOT NULL,
+  `news` varchar(200) NOT NULL,
+  `nto` varchar(10) NOT NULL,
+  `date` varchar(15) NOT NULL,
+  `ncount` varchar(5) NOT NULL,
+  `deleted` varchar(10) NOT NULL,
+  `user_type` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `news`
+--
+
+INSERT INTO `news` (`nid`, `news`, `nto`, `date`, `ncount`, `deleted`, `user_type`) VALUES
+(17, 'New batch for PHP(Website Development) is now started from 2 June 2018 at 10:30AM(Daily). So for joining contact us soon.', 'YES', '01-Jun-2018', '31', '', ''),
+(18, 'New batch(for engineering students) for Language C is started from 2nd June 18(Daily). So interested students can contact us for classes.', 'YES', '01-Jun-2018', '31', '', ''),
+(19, 'New Batch(for Engineering students who are coming in summer vacation) for Java is started from 2nd June-18(Daily).Interested students can contact me.', 'YES', '01-Jun-2018', '31', '', ''),
+(22, 'This Site was hacked for a will by some some. Plz ignore last mail. For any further info. contact to institute directly. Sorry for inconvenience.\r\n\r\nRegards\r\nBPC\r\n ', 'YES', '02-Sep-2018', '35', '', ''),
+(23, 'hello this is mail', 'YES', '03-Sep-2018', '35', 'Delete', ''),
+(24, '1dfghjkjbvbnm,mnbv', 'NO', '28-Jun-2021', '', '', 'kapil.kr09@gmail.com'),
+(25, 'this is test news by kapil', 'YES', '28-Jun-2021', '0', '', 'kapil.kr09@gmail.com');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `otp_expiry`
+--
+
+CREATE TABLE `otp_expiry` (
+  `otp` int(11) NOT NULL,
+  `is_expired` int(11) NOT NULL,
+  `create_at` date NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `otp_expiry`
+--
+
+INSERT INTO `otp_expiry` (`otp`, `is_expired`, `create_at`) VALUES
+(335425, 0, '2021-06-28'),
+(368542, 0, '2021-06-28'),
+(314289, 0, '2021-06-28'),
+(704092, 0, '2021-06-29');
 
 -- --------------------------------------------------------
 
@@ -69,6 +120,12 @@ INSERT INTO `visiter` (`vid`, `vcount`) VALUES
 --
 
 --
+-- Indexes for table `news`
+--
+ALTER TABLE `news`
+  ADD PRIMARY KEY (`nid`);
+
+--
 -- Indexes for table `registration`
 --
 ALTER TABLE `registration`
@@ -83,6 +140,12 @@ ALTER TABLE `visiter`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `news`
+--
+ALTER TABLE `news`
+  MODIFY `nid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `registration`

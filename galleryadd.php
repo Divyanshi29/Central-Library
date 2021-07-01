@@ -5,7 +5,7 @@ if(!$sesuser)
     header("location:logout.php");
 
 include('comman/connect.php');
-$data=mysqli_fetch_array($con->query("select * from user1 where user_id='$sesuser'"));
+$data=mysqli_fetch_array($con->query("select * from registration where email='$sesuser'"));
 
 ?>
 <!DOCTYPE html>
