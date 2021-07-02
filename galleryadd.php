@@ -1,4 +1,5 @@
 <?php
+ob_start();
 session_start();
 $sesuser=$_SESSION['sesuser'];
 if(!$sesuser)
@@ -11,10 +12,7 @@ $data=mysqli_fetch_array($con->query("select * from registration where email='$s
 <!DOCTYPE html>
 <html>
 <head>
-	<title>:: BPC</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	
 
 	<script language="javascript" type="text/javascript">
         window.onload = function () {
@@ -84,7 +82,6 @@ $data=mysqli_fetch_array($con->query("select * from registration where email='$s
 </html>
 
 <?php
-echo "string";
 if(isset($_POST['Upload']))
 {
 	extract($_POST);
