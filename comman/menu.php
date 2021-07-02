@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>:: NIT jsr</title>
+	<title>:: Admin NIT jsr</title>
 	<link rel="stylesheet" type="text/css" href="css/style1.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
@@ -49,7 +49,7 @@
 				<li><a href="">Notice <i class="fa fa-angle-down"></i></a>
 					<ul>
 						<li><a href="news.php">News</a></li>
-						<li><a href="message.php">Message</a></li>
+						<!--<li><a href="message.php">Message</a></li>-->
 					</ul>
 				</li>
 				<li><a href="">Gallery <i class="fa fa-angle-down"></i></a>
