@@ -1,9 +1,27 @@
-<?php 
- include('comman/style1.php'); 
- include('comman/menu.php');
+<?php
+session_start();
+$sesuser=$_SESSION['sesuser'];
+if(!$sesuser)
+    header("location:logout.php");
+
+include('comman/connect.php');
+$sql="select * from registration where email='$sesuser'";
+$result = mysqli_query($con,$sql);
+$data=mysqli_fetch_array($result);
 ?>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>:: Admin NIT jsr</title>
+  <link rel="stylesheet" type="text/css" href="css/style1.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
 
-
+</head>
+<body>
+<?php include('comman/menu.php');?>
 <div class="table-responsive" style="padding-top:85px;width:80%;margin-left:150px;text-align:center;"><br>
 <h3 style="text-align:center;color:blue;">Library Committe</h3><br>
 <table class="table table-hover table-bordered" id="dataTable" width="100%" cellspacing="0">
