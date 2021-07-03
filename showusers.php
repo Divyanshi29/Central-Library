@@ -66,19 +66,19 @@ function dis2()
 		<div id="data">
 		<table border="1">
 			<tr class="tr">
-				<td width="70">Sl. No</td>
+				<td width="50">Sl. No</td>
 				<td>Name</td>
 				<td>Gender</td>
 				<td>RegiNo</td>
 				<td>Email</td>
 				<td>Mobile</td>
-				<td>Course</td>
+				<td>Branch</td>
 				<td>Year</td>
-				<td>Action</td>
+				<td>Type</td>
+				<td width="70">Action</td>
 			</tr>
 			<?php
 				$sql = "SELECT * FROM registration order by(userid) desc LIMIT ".$pageLimit." , ".$setLimit;
-				echo $sql;
 				$res=$con->query($sql);
 				//$i=1;
 				while($row=mysqli_fetch_array($res))
@@ -91,8 +91,8 @@ function dis2()
 						echo "<td>".$row['Email']."</td>";
 						echo "<td>".$row['MobileNo']."</td>";
 						echo "<td>".$row['Branch']."</td>";
-						echo "<td>".substr($row['Regno'],0,4)."-".substr($row['Regno'],0,4)."</td>";
-						/*echo "<td align='center'>".$row['status']."</td>";*/
+						echo "<td>".substr($row['Regno'],0,4)."</td>";
+						echo "<td align='center'>".$row['Type']."</td>";
 						echo "<td align='center'>
 								<a href='userview.php?id=".$id."'><i class='fa fa-eye'></i></a> | <a href='usersedit.php?id=".$id."'><i class='fa fa-pencil'></i></a> | 
 								<a href='delete.php?id=".$id."&&tname=account1'><i class='fa fa-trash'></i></a>

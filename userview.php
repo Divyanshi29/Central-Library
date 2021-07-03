@@ -73,8 +73,8 @@ else
 	<div class="container">
 		<div class="box">
 			<div class="one"><i class="fa fa-paper-plane"></i></div>
-			<!--<div class="two"><?php echo $row['status'];?></div>-->
 			<div class="three">Status</div>
+			<div class="two"><?php echo $row['Type'];?></div>
 			<div class="four"></div>
 		</div>
 		<div class="box">
@@ -99,7 +99,7 @@ else
 			</tr>
 			<tr>
 				<td>Year</td>
-				<td><?php echo substr($row['Regno'],0,4)."-".substr($row['Regno'],0,4);?></td>
+				<td><?php echo substr($row['Regno'],0,4)?></td>
 			</tr>
 			<tr>
 				<td>Mobile</td>
