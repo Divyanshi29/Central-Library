@@ -79,16 +79,14 @@ body
 .account
 {
 	border: 2px solid #b75b00;
-	border-radius: 100%;
 	width: 50px;
 	height: 48px;
 	cursor: pointer;
 }
-.account img
+.account div
 {
 	width: 50px;
 	height: 48px;
-	border-radius: 100%;
 }
 .main
 {
