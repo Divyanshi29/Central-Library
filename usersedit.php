@@ -45,7 +45,7 @@ $row=mysqli_fetch_array($con->query("select * from registration where userid='$i
 				</tr>
 				<tr>
 					<td>Reg. No.</td>
-					<td><input type="text" name="mname" required minlength="2" value="<?php echo $row['Regno'];?>"></td>
+					<td><input type="text" name="regno" required minlength="2" value="<?php echo $row['Regno'];?>"></td>
 					<td>Mobile</td>
 					<td><input type="text" name="mobile" required minlength="10" maxlength="10" value="<?php echo $row['MobileNo'];?>"></td>
 				</tr>
@@ -58,19 +58,21 @@ $row=mysqli_fetch_array($con->query("select * from registration where userid='$i
 				<tr>
 					<td>Branch</td>
 					<td><select name="Branch" required>
-							<option value="">Select Branch..</option>
-							<option value="BCA" <?php if($row['Branch']=='BCA') echo "selected";?>>BCA</option>
-							<option value="BSc IT" <?php if($row['Branch']=='Bsc IT') echo "selected";?>>BSc IT</option>
-							<option value="BTech" <?php if($row['Branch']=='BTech') echo "selected";?>>BTech</option>
-							<option value="BE" <?php if($row['Branch']=='BE') echo "selected";?>>BE</option>
-							<option value="MCA" <?php if($row['Branch']=='MCA') echo "selected";?>>MCA</option>
-							<option value="MSc IT" <?php if($row['Branch']=='MSc IT') echo "selected";?>>MSc IT</option>
-							<option value="MTech" <?php if($row['Branch']=='MTech') echo "selected";?>>MTech</option>
+                <option value="Chemistry" <?php if($row['Branch']=='Chemistry') echo "selected";?>>Chemistry</option>
+                <option value="Civil Engineering" <?php if($row['Branch']=='Civil Engineering') echo "selected";?>>Civil Engineering</option>
+                <option value="Computer Applications" <?php if($row['Branch']=='Computer Applications') echo "selected";?>>Computer Applications</option>
+                <option value="Physics" <?php if($row['Branch']=='Physics') echo "selected";?>>Physics</option>
+                <option value="Electrical Engineering" <?php if($row['Branch']=='Electrical Engineering') echo "selected";?>>Electrical Engineering</option>
+                <option value="Electronics and Communication Engineering" <?php if($row['Branch']=='Electronics and Communication Engineering') echo "selected";?>>Electronics and Communication Engineering</option>
+                <option value="Computer Science and Engineering" <?php if($row['Branch']=='Computer Science and Engineering') echo "selected";?>>Computer Science and Engineering</option>
+                <option value="Metallurgical and Materials Engineering" <?php if($row['Branch']=='Metallurgical and Materials Engineering') echo "selected";?>>Metallurgical and Materials Engineering</option>
+                <option value="Production and Industrial Engineering" <?php if($row['Branch']=='Production and Industrial Engineering') echo "selected";?>>Production and Industrial Engineering</option>
+                <option value="Mathematics" <?php if($row['Branch']=='Mathematics') echo "selected";?>>Mathematics</option>
+                <option value="Mechanical Engineering" <?php if($row['Branch']=='Mechanical Engineering') echo "selected";?>>Mechanical Engineering</option>
+                <option value="Humanities,Social Science and Management" <?php if($row['Branch']=='Humanities,Social Science and Management') echo "selected";?>>Humanities,Social Science and Management</option>
 						</select>
 					</td>
-				</tr>
-				<tr>
-					<td>From Year</td>
+					<td>Year</td>
 					<td><select class="form-control input" name="fromyear" required>
 							<option value="">Select Year..</option>
 							<?php 
@@ -80,20 +82,6 @@ $row=mysqli_fetch_array($con->query("select * from registration where userid='$i
 							?>
 						</select>
 					</td>
-					<td>To Year</td>
-					<td><select class="form-control input" name="toyear" required>
-							<option value="">Select Year..</option>
-							<?php 
-								for ($i=2012; $i <=2030 ; $i++) { ?>
-									<option value='<?php echo $i;?>' <?php if(substr($row['Regno'],0,4)==$i) echo "selected";?>><?php echo $i;?></option>";
-								<?php }
-							?>
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<td>Overview</td>
-					<td colspan="3"><textarea name="overview" style="width: 820px; height: 100px;"><?php ?></textarea></td>
 				</tr>
 				<tr>
 					<td></td>
@@ -115,10 +103,10 @@ if(isset($_POST['save']))
 {
 	extract($_POST);
 	include('comman/connect.php');
-	$sql="update account1 set name='$name',fname='$fname',mname='$mname',dob='$dob',gender='$gender',mobile='$mobile',email='$email',password='$password',college_name='$college_name',course='$course',toyear='$toyear',fromyear='$fromyear',address='$address',city='$city',state='$state',overview='$overview' where ac_id='$id'";
+	$sql="update registration set name='$name',Regno='$regno',gender='$gender',mobileno='$mobile',email='$email',password='$password',Branch='$Branch' where userid='$id'";
 	$con->query($sql);
-	mysql_close($con);
+	mysqli_close($con);
 	//header("location:subscriberedit.php?id=$id");
-	echo"<script>window.location.href='subscriberedit.php?id=".$id."';</script>";
+	echo"<script>window.location.href='usersedit.php?id=".$id."';</script>";
 }
 ?>

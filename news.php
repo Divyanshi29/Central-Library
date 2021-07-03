@@ -69,7 +69,7 @@ $data=mysqli_fetch_array($con->query("select * from registration where email='$s
 						echo "<td>".$i++."</td>";
 						echo "<td>".$row['news']."</td>";
 						echo "<td align='center'>".$row['date']."</td>";
-						echo "<td align='center'>".$row['nto']." (".$row['ncount'].")</td>";
+						echo "<td align='center'>".$row['nto']."</td>";
 						echo "<td align='center'><a href='delete.php?id=".$id."&&tname=news'>Delete</a></td>";
 					echo "</tr>";
 				}

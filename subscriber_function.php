@@ -5,7 +5,7 @@
 	
 	http://www.discussdesk.com/download-pagination-in-php-and-mysql-with-example.htm
 
-	************************************************/
+************************************************/
 
    function displayPaginationBelow($per_page,$page){
 	   $page_url="?";
