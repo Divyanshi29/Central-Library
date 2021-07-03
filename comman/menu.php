@@ -14,6 +14,7 @@
 					<ul>
 						<li><a href="changepsw.php">Change PSW</a></li>
 						<li><a href="setting.php">Setting</a></li>
+						<li><a href="addadmin.php">Add Admin</a></li>
 						<li><a href="logout.php">Log Out</a></li>
 					</ul>
 				</li>
