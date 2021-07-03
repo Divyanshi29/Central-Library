@@ -34,12 +34,7 @@
 						<li><a href="logout.php">Log Out</a></li>
 					</ul>
 				</li>
-				<li><a href="">Contact <i class="fa fa-angle-down"></i></a>
-					<ul>
-						<li><a href="inbox.php">Inbox</a></li>
-						<li><a href="sentmail.php">Sent Mail</a></li>
-					</ul>
-				</li>
+				
 				<li><a href="">User <i class="fa fa-angle-down"></i></a>
 					<ul>
 						<li><a href="subscribe.php">Subscribe</a></li>
