@@ -34,7 +34,7 @@ $data=mysqli_fetch_array($con->query("select * from registration where email='$s
 					<td><textarea name="news" required placeholder="Enter News..." minlength="10" maxlength="200"></textarea></td>
 				</tr>
 				<tr>
-					<td width="250" valign="top"><br>News To</td>
+					<td width="250" valign="top"><br>Show News</td>
 					<td><select name="status">
 						<option value="YES">YES</option>
 						<option value="NO">NO</option>
@@ -87,17 +87,16 @@ if(isset($_POST['Update']))
 {
 	extract($_POST);
 	include('comman/connect.php');
-    $mail=0;
+    $mail=1;
 	$date=date('d-M-Y');
 	$sql="insert into news values(default,'$news','$status','$date','$mail','','$sesuser')";
-	echo $sql;
 	$con->query($sql);
 	mysqli_close($con);
 	//header("location:news.php");
 ?>
 
 <script type="text/javascript">
-	count="<b><?php echo $mail?></b> Add News Successfully ";
+	count="Add News Successfully ";
 	//alert('value='+count);
 
 	document.getElementById('msg').innerHTML=count;
