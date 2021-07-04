@@ -20,7 +20,7 @@
 				</li>
 				<li><a href="">User <i class="fa fa-angle-down"></i></a>
 					<ul>
-						<li><a href="showusers.php">Our Faculty</a></li>
+						<!--<li><a href="showusers.php">Our Faculty</a></li>-->
 						<li><a href="showusers.php">Our Users</a></li>
 					</ul>
 				</li>
@@ -53,7 +53,12 @@
 						<li><a href="whr.php">Working Hour</a></li>
 					</ul>
 				</li>
-				<li><a href="libcom.php">Library Team </a></li>
+				<li><a href="">Library Team <i class="fa fa-angle-down"></i></a>
+					<ul>
+						<li><a href="libcom.php">Add Member</a></li>
+						<li><a href="libcomshow.php">All Member</a></li>
+					</ul>
+				</li>
 				<li><a href="home.php">Home</a></li>
 			</ul>
 		</div>
