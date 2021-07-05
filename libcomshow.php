@@ -72,7 +72,7 @@ function dis2()
 				<td width="70">Action</td>
 			</tr>
 			<?php
-				$sql = "SELECT * FROM libraryteam LIMIT ".$pageLimit." , ".$setLimit;
+				$sql = "SELECT * FROM libraryteam order by(memberid) LIMIT ".$pageLimit." , ".$setLimit;
 				$res=$con->query($sql);
 				//$i=1;
 				while($row=mysqli_fetch_array($res))

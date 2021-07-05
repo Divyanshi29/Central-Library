@@ -9,18 +9,26 @@ include("include/main.php");
     <table class="table table-bordered table-hover">
   <thead style="background-color:black;color:white;">
   <h4 style="background-color:#d90166;color:white;height:40px;padding:10px 2px 2px 2px;">e-Library Complex Timings</h4>
-  <h4 style="background-color:black;color:white;height:40px;padding:10px 2px 2px 2px;margin-top:-9.5px;">Day &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+  <h4 style="background-color:black;color:white;height:40px;padding:10px 2px 2px 2px;margin-top:-9.5px; text-align: center;">Day &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Timings </h4>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">Monday - Friday</th>
-      <td>08:00 AM -  10:00 pm</td>
-    </tr>
-    <tr>
-      <th scope="row">Saturday, Sunday & Public Holidays</th>
-      <td>Closed due to COVID-19 Lockdown</td>
-    </tr>
+    <?php 
+        include('comman/connect.php');
+        $res=$con->query("select * from librarytime where deleted='' order by(timeid) desc");
+        while($row=mysqli_fetch_array($res))
+        {
+          echo "<tr>";
+          echo "<th scope='row'>Monday - Friday</th>";
+          echo "<td>".$row['daytime']."</td>";
+          echo "</tr>";
+          echo "<tr>";
+          echo "<th scope='row'>Saturday, Sunday & Public Holidays </th>";
+          echo "<td>".$row['holidaytime']."</td>";
+          echo "</tr>";
+          break;
+        }
+    ?>
   </tbody>
 </table>
 
