@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.4
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 05, 2021 at 05:22 PM
--- Server version: 5.7.14
--- PHP Version: 5.6.25
+-- Generation Time: Jul 07, 2021 at 11:50 AM
+-- Server version: 10.4.18-MariaDB
+-- PHP Version: 8.0.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -68,63 +69,6 @@ INSERT INTO `gallery` (`gid`, `name`, `pic`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `libraryteam`
---
-
-CREATE TABLE `libraryteam` (
-  `memberid` int(10) NOT NULL,
-  `name` varchar(50) NOT NULL,
-  `teamtype` varchar(50) NOT NULL,
-  `teampost` varchar(50) NOT NULL,
-  `pic` varchar(250) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `libraryteam`
---
-
-INSERT INTO `libraryteam` (`memberid`, `name`, `teamtype`, `teampost`, `pic`) VALUES
-(5, 'Prof. R.N. Mohanty', 'Library Committee', 'Convener', '19059profile_mm.jpg'),
-(4, 'Prof. A.M. Tigga', 'Library Committee', 'P/I Library,Chairman', '32567profile_mm.jpg'),
-(6, 'Sri. N.K. Sethy', 'Library Committee', 'Convener', '7332profile_mm.jpg'),
-(7, 'Prof. D.K. Yadav', 'Library Committee', 'Member', '27952profile_mm.jpg'),
-(8, 'Dr. Akhliesh Kumar', 'Library Committee', 'Member', '23053profile_mm.jpg'),
-(9, 'Dr. Dilip Kumar', 'Library Committee', 'Member', '19881profile_mm.jpg'),
-(10, 'Sri. S.K. Prasad', 'Library Committee', 'Member', '32194profile_mm.jpg'),
-(11, 'Dr. Neeta Bharti', 'Library Staffs', 'Assistant Librarian', '16174profile_f.jpg'),
-(12, 'Mr. N.K. Sethy', 'Library Staffs', 'Assistant Librarian', '22483profile_mm.jpg'),
-(13, 'Mr. Umesh Kumar', 'Library Staffs', 'Assistant Librarian', '6863profile_mm.jpg'),
-(14, 'Mr. Ganesh Shrestha', 'Library Staffs', 'Typist Clerk', '24336profile_mm.jpg'),
-(15, 'Mr. Ravi Mahato', 'Library Staffs', 'Typist Clerk', '11356profile_mm.jpg'),
-(16, 'Mr. Saurabh Saini', 'Library Staffs', 'Typist Clerk', '2569profile_mm.jpg'),
-(17, 'Mr. Rakesh Kumar', 'Library Staffs', 'Typist Clerk', '7013profile_mm.jpg'),
-(18, 'Mrs. Sunaina Devi', 'Library Staffs', 'Typist Clerk', '13326profile_f.jpg');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `librarytime`
---
-
-CREATE TABLE `librarytime` (
-  `timeid` int(10) NOT NULL,
-  `daytime` varchar(100) NOT NULL,
-  `holidaytime` varchar(100) NOT NULL,
-  `date` varchar(20) NOT NULL,
-  `deleted` varchar(30) NOT NULL,
-  `user` varchar(50) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `librarytime`
---
-
-INSERT INTO `librarytime` (`timeid`, `daytime`, `holidaytime`, `date`, `deleted`, `user`) VALUES
-(1, '08:00 AM - 10:00 PM', 'Closed due to COVID-19 Lockdown', '04-Jul-2021', '', '2019pgcaca02@nitjsr.ac.in');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `news`
 --
 
@@ -149,12 +93,20 @@ INSERT INTO `news` (`nid`, `news`, `nto`, `date`, `news_file`, `deleted`, `user_
 (22, 'This Site was hacked for a will by some some. Plz ignore last mail. For any further info. contact to institute directly. Sorry for inconvenience.\r\n\r\nRegards\r\nBPC\r\n ', 'YES', '02-Sep-2018', '35', 'Delete', ''),
 (23, 'hello this is mail', 'YES', '03-Sep-2018', '35', 'Delete', ''),
 (24, '1dfghjkjbvbnm,mnbv', 'NO', '28-Jun-2021', '', '', 'kapil.kr09@gmail.com'),
-(25, 'this is test news by kapil', 'YES', '28-Jun-2021', '0', '', 'kapil.kr09@gmail.com'),
-(26, 'This is latest update', 'YES', '03-Jul-2021', '', '', 'admin'),
-(27, 'This is latest update', 'YES', '03-Jul-2021', '', '', 'admin'),
-(28, 'this is new for testing', 'YES', '03-Jul-2021', '', '', 'admin'),
-(29, 'dfghjklnb  jhgfdxhj', 'YES', '03-Jul-2021', '', '', 'admin'),
-(30, '5678 dfghjkl', 'YES', '03-Jul-2021', '0', '', 'admin');
+(25, 'this is test news by kapil', 'YES', '28-Jun-2021', '0', '', 'kapil.kr09@gmail.com');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `newsmagazines`
+--
+
+CREATE TABLE `newsmagazines` (
+  `Type` varchar(20) NOT NULL,
+  `Name` varchar(20) NOT NULL,
+  `pic` varchar(400) NOT NULL,
+  `link` varchar(400) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -239,18 +191,6 @@ ALTER TABLE `gallery`
   ADD PRIMARY KEY (`gid`);
 
 --
--- Indexes for table `libraryteam`
---
-ALTER TABLE `libraryteam`
-  ADD PRIMARY KEY (`memberid`);
-
---
--- Indexes for table `librarytime`
---
-ALTER TABLE `librarytime`
-  ADD PRIMARY KEY (`timeid`);
-
---
 -- Indexes for table `news`
 --
 ALTER TABLE `news`
@@ -277,26 +217,20 @@ ALTER TABLE `visiter`
 --
 ALTER TABLE `gallery`
   MODIFY `gid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
---
--- AUTO_INCREMENT for table `libraryteam`
---
-ALTER TABLE `libraryteam`
-  MODIFY `memberid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
---
--- AUTO_INCREMENT for table `librarytime`
---
-ALTER TABLE `librarytime`
-  MODIFY `timeid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 --
 -- AUTO_INCREMENT for table `news`
 --
 ALTER TABLE `news`
-  MODIFY `nid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `nid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+
 --
 -- AUTO_INCREMENT for table `registration`
 --
 ALTER TABLE `registration`
   MODIFY `UserId` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -45,7 +45,7 @@
 					<ul>
 						<li><a href="galleryadd.php">E-textbooks</a></li>
 						<li><a href="galleryshow.php">Online Journals</a></li>
-						<li><a href="galleryshow.php">Magzines</a></li>
+						<li><a href="AdminNewsMagazines.php">Magzines</a></li>
 					</ul>
 				</li>
 				<li><a href="#">About <i class="fa fa-angle-down"></i></a>

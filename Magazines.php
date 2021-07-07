@@ -1,5 +1,6 @@
 
 <?php
+ob_start();
 include("include/main.php");
 include("include/header.php");
 ?>
@@ -108,60 +109,57 @@ include("include/header.php");
   <body>
     <h1 style="text-align: center">Newspaper</h1>
     <div class="Newspaper">
-      <!-- <button id="btnLeft" style="justify-content: left" onClick="plusDivs(-1)">
-        <
-      </button> -->
       <div
         onClick="window.location.href='https://www.livehindustan.com/'"
-        class="divNewspaper fade"
+        class="divNewspaper"
       >
         <img class="imageNewspaper" src="image/hindustan1.jfif" />
         <h1 class="textNewspaper">Hindustan</h1>
       </div>
       <div
-        class="divNewspaper fade"
+        class="divNewspaper"
         onClick="window.location.href='https://www.jagran.com/'"
       >
         <img class="imageNewspaper" src="image/dainik1.jfif" />
         <h1 class="textNewspaper">Dainik Jagran</h1>
       </div>
       <div
-        class="divNewspaper fade"
+        class="divNewspaper"
         onClick="window.location.href='https://www.prabhatkhabar.com/'"
       >
         <img class="imageNewspaper" src="image/prabhatkhabar1.jfif" />
         <h1 class="textNewspaper">Prabhat Khabar</h1>
       </div>
       <div
-        class="divNewspaper fade"
+        class="divNewspaper"
         onClick="window.location.href='https://www.hindustantimes.com/'"
       >
         <img class="imageNewspaper" src="image/hindustanTimes1.jfif" />
         <h1 class="textNewspaper">Hindustan Times</h1>
       </div>
       <div
-        class="divNewspaper fade"
+        class="divNewspaper"
         onClick="window.location.href='https://timesofindia.indiatimes.com/'"
       >
         <img class="imageNewspaper" src="image/timesofInida.jfif" />
         <h1 class="textNewspaper">Times Of India</h1>
       </div>
       <div
-        class="divNewspaper fade"
+        class="divNewspaper"
         onClick="window.location.href='https://www.telegraphindia.com/'"
       >
         <img class="imageNewspaper" src="image/telegraph.jfif" />
         <h1 class="textNewspaper">Telegraph</h1>
       </div>
       <div
-        class="divNewspaper fade"
+        class="divNewspaper"
         onClick="window.location.href='https://economictimes.indiatimes.com/'"
       >
         <img class="imageNewspaper" src="image/economicTimes.jfif" />
         <h1 class="textNewspaper">Economic Times</h1>
       </div>
       <div
-        class="divNewspaper fade"
+        class="divNewspaper"
         onClick="window.location.href='https://www.thehindu.com/'"
       >
         <img class="imageNewspaper" src="image/hindu.jfif" />
@@ -173,48 +171,48 @@ include("include/header.php");
     <div class="Magazines">
       <div
         onClick="window.location.href='https://www.businesstoday.in/emagazine'"
-        class="divMagazines fade"
+        class="divMagazines"
       >
         <img class="imageMagazines" src="image/businessToday.jfif" />
         <h1 class="textMagazine">Business Today</h1>
       </div>
       <div
-        class="divMagazines fade"
+        class="divMagazines"
         onClick="window.location.href='https://ezine.efymag.com/buy/ezinetariff.asp'"
       >
         <img class="imageMagazines" src="image/electronic4you.jfif" />
         <h1 class="textMagazine">Electronics For You</h1>
       </div>
       <div
-        class="divMagazines fade"
+        class="divMagazines"
         onClick="window.location.href='https://www.indiatoday.in/magazine'"
       >
         <img class="imageMagazines" src="image/indiaToday.jfif" />
         <h1 class="textMagazine">India Today</h1>
       </div>
       <div
-        class="divMagazines fade"
+        class="divMagazines"
         onClick="window.location.href='https://www.magzter.com/IN/THG-publishing-pvt-ltd/FRONTLINE/News/'"
       >
         <img class="imageMagazines" src="image/frontline.jfif" />
         <h1 class="textMagazine">Frontline Magazine</h1>
       </div>
       <div
-        class="divMagazines fade"
+        class="divMagazines"
         onClick="window.location.href='https://www.readersdigest.in/'"
       >
         <img class="imageMagazines" src="image/readersDigest.jfif" />
         <h1 class="textMagazine">Reader's Digest</h1>
       </div>
       <div
-        class="divMagazines fade"
+        class="divMagazines"
         onClick="window.location.href='https://magazine.outlookindia.com/issue/11724'"
       >
         <img class="imageMagazines" src="image/outlook.jfif" />
         <h1 class="textMagazine">Outlook</h1>
       </div>
       <div
-        class="divMagazines fade"
+        class="divMagazines"
         onClick="window.location.href='https://www.pdgroup.in/'"
       >
         <img class="imageMagazines" src="image/pratyogitaDarpan.jfif" />
@@ -224,5 +222,9 @@ include("include/header.php");
     <script></script>
 </body>
 </html>
+
+<?php
+include("include/footerstrip.php");
+?>
 
  
