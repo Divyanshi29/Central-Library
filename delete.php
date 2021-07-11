@@ -36,6 +36,13 @@ if($name=="gallery")
 	 unlink("gallery/$pic");
 	header("location:galleryshow.php");
 }
+if($name=="magazine")
+{
+	$pic=$_REQUEST['pic'];
+	 $con->query("delete from newsmagazines where Id='$id'");
+	 unlink("newsMagazines/$pic");
+	header("location:AdminNewsMagazines.php");
+}
 
 if($name=="news")
 {

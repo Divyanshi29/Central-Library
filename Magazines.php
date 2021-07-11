@@ -4,13 +4,6 @@ ob_start();
 include("include/main.php");
 include("include/header.php");
 ?>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Newspaper</title>
 
     <style>
       .Newspaper {
@@ -109,6 +102,57 @@ include("include/header.php");
   <body>
     <h1 style="text-align: center">Newspaper</h1>
     <div class="Newspaper">
+      <?php
+			include('comman/connect.php');
+			$res=$con->query("select * from  newsmagazines where Type = 'Newspaper'");
+      
+			while($row=mysqli_fetch_array($res))
+			{ 
+        $name = $row['Name'];
+        $link = $row['link'];
+        $id=$row['Id']; 
+        $pic=$row['pic']; 
+        ?>
+
+      <div
+        onClick="window.location.href=<?php echo $link;?>"
+        class="divNewspaper"
+      >
+        <img class="imageNewspaper" src = "newsMagazines/<?php echo $pic;?>"/>
+        <h1 class="textNewspaper"><?php echo $name;?></h1>
+      </div>
+			<?php }
+		?>
+    </div>
+
+
+
+
+    <h1 style="text-align: center">Magazines</h1>
+    <div class="Newspaper">
+      <?php
+			include('comman/connect.php');
+			$res=$con->query("select * from  newsmagazines where Type = 'Magazines'");
+      
+			while($row=mysqli_fetch_array($res))
+			{ 
+        $name = $row['Name'];
+        $link = $row['link'];
+        $id=$row['Id']; 
+        $pic=$row['pic']; 
+        ?>
+
+      <div
+        onClick="window.location.href=<?php echo $link;?>"
+        class="divMagazines"
+      >
+        <img class="imageMagazines" src = "newsMagazines/<?php echo $pic;?>"/>
+        <h1 class="textMagazine"><?php echo $name;?></h1>
+      </div>
+			<?php }
+		?>
+    </div>
+    <!-- <div class="Newspaper">
       <div
         onClick="window.location.href='https://www.livehindustan.com/'"
         class="divNewspaper"
@@ -165,9 +209,9 @@ include("include/header.php");
         <img class="imageNewspaper" src="image/hindu.jfif" />
         <h1 class="textNewspaper">The Hindu</h1>
       </div>
-    </div>
+    </div> -->
     <!-----------Magazines-->
-    <h1 style="text-align: center">Magazines</h1>
+    <!-- <h1 style="text-align: center">Magazines</h1>
     <div class="Magazines">
       <div
         onClick="window.location.href='https://www.businesstoday.in/emagazine'"
@@ -221,10 +265,8 @@ include("include/header.php");
     </div>
     <script></script>
 </body>
-</html>
+</html> -->
 
 <?php
 include("include/footerstrip.php");
 ?>
-
- 
