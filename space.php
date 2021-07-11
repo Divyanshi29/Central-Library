@@ -1,5 +1,6 @@
-<?php include("include/header.php");
+<?php 
 include("include/main.php");
+include("include/header.php");
 ?>
 <div class="container" style="width:60%;">
 <h2 style="font-family:Times New Roman;"><b>Space</b></h2><br>

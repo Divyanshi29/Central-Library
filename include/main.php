@@ -1,3 +1,16 @@
+
+<?php 
+include('comman/connect.php');
+session_start();
+if(isset($_SESSION['user'])){
+    $user_ses=$_SESSION['user'];
+}
+else
+{
+    $user_ses="";
+}
+$data=mysqli_fetch_array($con->query("select * from registration where email='$user_ses'"));
+?>
 <!DOCTYPE html>
 <html>
 <head>
