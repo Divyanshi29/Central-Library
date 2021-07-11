@@ -53,24 +53,37 @@
       </ul>
       
    <ul class="nav navbar-nav navbar-right">
-      <li class="tabOuter" class="dropdown"><a class="borderOuter" href="RegistrationOtp.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
-          <!-- <ul class="dropdown-menu">
-          <li><a class="borderInner" href="#">Admin</a></li>
-          <li><a  href="#">Student</a></li>
-          </ul> -->
-          </li>
-          <li class="tabOuter" class="dropdown"><a class="borderOuter"  href="SignIn.php"><span class="glyphicon glyphicon-log-in"></span> Login </a>
-          <!-- <ul class="dropdown-menu">
-          <li><a class="borderInner" href="#">Admin</a></li>
-          <li><a  href="#">Student</a></li>
-          </ul> -->
-          </li>
-     <!--<li class="dropdown"><a  class="dropdown-toggle" data-toggle="dropdowm" href="#"><span class="glyphicon glyphicon-log-in" class="caret"></span> Login</a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Admin</a></li>
-          <li><a href="#">Student</a></li>
-          </ul>
-          </li>-->
+      
+      <?php
+        if(!$user_ses)
+        { ?>
+          <li class="tabOuter" class="dropdown"><a class="borderOuter" href="RegistrationOtp.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+      <!-- <ul class="dropdown-menu">
+      <li><a class="borderInner" href="#">Admin</a></li>
+      <li><a  href="#">Student</a></li>
+      </ul> -->
+      </li>
+      <li class="tabOuter" class="dropdown"><a class="borderOuter"  href="SignIn.php"><span class="glyphicon glyphicon-log-in"></span> Login </a>
+      <!-- <ul class="dropdown-menu">
+      <li><a class="borderInner" href="#">Admin</a></li>
+      <li><a  href="#">Student</a></li>
+      </ul> -->
+      </li>
+        <?php
+         }
+        else
+        { ?>
+          <li class="dropdown"><a  class="dropdown-toggle" data-toggle="dropdowm" href="#"><span class="glyphicon glyphicon-log-in" class="caret"></span> Login</a>
+          <ul class="dropdown-menu">
+          <li><a href="profile">Profile</a></li>  
+          <li><a href="editprofile">Edit Profile</a></li>
+          <li><a href="changeimage">Change Image</a></li>  
+          <li><a href="changepsw">Change PSW</a></li>
+          <li><a href="logout">Log Out</a></li>
+      </ul>
+      </li>
+        <?php }
+        ?>
     </ul>
   </div>
 </nav>

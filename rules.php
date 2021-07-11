@@ -1,5 +1,6 @@
-<?php include("include/header.php");
+<?php
 include("include/main.php");
+include("include/header.php");
 ?>
 <h2 style="margin-left:150px;font-family:Times New Roman;padding:18px 5px 5px 5px;"><b>General Library Rules</b></h2>
 <div class="container" style="text-align:left; font-size:18px;margin-left:150px;padding:20px 50px 150px 50px;">

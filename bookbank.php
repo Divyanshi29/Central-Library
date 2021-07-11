@@ -1,5 +1,6 @@
-<?php include("include/header.php");
+<?php 
 include("include/main.php");
+include("include/header.php");
 ?>
 <div class="container" style="width:60%;padding:20px 20px 20px 20px;">
 <h2 style="font-family:Times New Roman;"><b>Book Bank</b></h2><br>
