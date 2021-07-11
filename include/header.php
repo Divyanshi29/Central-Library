@@ -73,7 +73,7 @@
          }
         else
         { ?>
-          <li class="dropdown"><a  class="dropdown-toggle" data-toggle="dropdowm" href="#"><span class="glyphicon glyphicon-log-in" class="caret"></span> Login</a>
+          <li class="tabOuter" class="dropdown"><a class="borderOuter" class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $data['Name'];?><span class="caret"></span></a>
           <ul class="dropdown-menu">
           <li><a href="profile">Profile</a></li>  
           <li><a href="editprofile">Edit Profile</a></li>
