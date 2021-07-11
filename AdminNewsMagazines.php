@@ -25,7 +25,7 @@ $data=mysqli_fetch_array($result);
                 if (typeof (FileReader) != "undefined") {
                     var dvPreview = document.getElementById("dvPreview");
                     dvPreview.innerHTML = "";
-                    var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.jpg|.jpeg|.gif|.png|.bmp)$/;
+                    var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.jpg|.jpeg|.gif|.png|.bmp|.jfif)$/;
                     for (var i = 0; i < fileUpload.files.length; i++) {
                         var file = fileUpload.files[i];
                         if (regex.test(file.name.toLowerCase())) {
@@ -63,7 +63,12 @@ $data=mysqli_fetch_array($result);
 			<table border="1">
                 <tr>
 					<td>Image Type</td>
-					<td><input type="text" id="type" name="imgtype" required></td>
+					<td> <select name="imgtype" required >
+						<option value="none" selected disabled hidden>Select an Option</option>
+						<option value="Newspaper">Newspaper</option>
+						<option value="Magazines">Magazines</option>
+					</select></td>
+					<!-- <td><input type="text" id="type" name="imgtype" required></td> -->
 				</tr>
 				<tr>
 					<td>Image Name</td>
@@ -89,7 +94,30 @@ $data=mysqli_fetch_array($result);
 	</div>
 </div>
 
+
+
+
+<div class="main" style="border: 0px solid #333;">
+	<div class="hedding">Add Gallery Images</div>
+	<div class="form">
+		<?php
+			include('comman/connect.php');
+			$res=$con->query("select * from  newsmagazines order by(Id) desc");
+			while($row=mysqli_fetch_array($res))
+			{ $id=$row['Id']; $pic=$row['pic']; ?>
+				<div class="galbox">
+					<img src="newsMagazines/<?php echo $pic;?>">
+					<div class="gallname"><?php echo $row['Name'];?></div>
+					<a href="delete.php?id=<?php echo $id;?>&&tname=magazine&&pic=<?php echo $pic;?>">Delete</a>
+				</div>
+			<?php }
+		?>
+		
+		<div class="clear"></div>
+	</div>
+</div>
 <?php include('comman/footer.php');?>
+
 </body>
 </html>
 
@@ -98,8 +126,9 @@ if(isset($_POST['Upload']))
 {
 	extract($_POST);
 	include('comman/connect.php');
-	 $img=rand().$_FILES['img']['name'];
-	$con->query("insert into newsmagazines values('$imgtype','$imgname','$img','$imglink'");
+	$img=rand().$_FILES['img']['name'];
+	// echo "insert into newsmagazines values(Default,'$imgtype','$imgname','$img','$imglink')";
+	$con->query("insert into newsmagazines values(Default,'$imgtype','$imgname','$img','$imglink')");
 	move_uploaded_file($_FILES['img']['tmp_name'], "newsMagazines/".$img);
 	mysqli_close($con);
 	//header("location:AdminNewsMagazines.php");
