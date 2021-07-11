@@ -5,46 +5,117 @@ if(!$sesuser)
     header("location:logout.php");
 
 include('comman/connect.php');
-$sql="select * from registration where email='$sesuser'";
-$result = mysqli_query($con,$sql);
-$data=mysqli_fetch_array($result);
+$data=mysqli_fetch_array($con->query("select * from registration where email='$sesuser'"));
+
 ?>
-<?php include('comman/menu.php');?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>:: Admin NIT jsr</title>
-	<link rel="stylesheet" type="text/css" href="css/style1.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <title>::NIT JSR</title>
+  <link rel="stylesheet" type="text/css" href="css/style1.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
 </head>
 <body>
 
-<div class="container" style="margin-top:150px;">
-    <div class="row" >
-<form >
-  <div class="form-group" >
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+<?php include('comman/menu.php');?>
+
+<div class="main">
+  <div id="msg"></div>
+  <div class="hedding">Add News</div>
+  <div class="form">
+    <form method="post" action="#">
+      <table border="1">
+        <tr>
+          <td width="200">Enter Name</td>
+          <td><input style="width:90%;" type="text" name="name" required placeholder="Enter Name..." minlength="3" maxlength="200"></td>
+        </tr>
+        <tr>
+          <td>Enter Email</td>
+          <td><input style="width:90%;" type="email" name="email" required placeholder="Enter Email..." minlength="5" maxlength="200"></td>
+        </tr>
+        <tr>
+          <td>Enter Mobile No</td>
+          <td><input style="width:90%;" type="text" name="mobile" required placeholder="Enter Mobile No..." minlength="10" maxlength="10"></td>
+        </tr>
+        <tr>
+          <td>Enter Password</td>
+          <td><input style="width:90%;" type="password" name="password1" required placeholder="Enter Password..." minlength="4" maxlength="20"></td>
+        </tr>
+        <tr>
+          <td>Enter Confirm Password</td>
+          <td><input style="width:90%;" type="password" name="password2" required placeholder="Enter Confirm Password..." minlength="4" maxlength="20"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="submit" name="signup" value="Sign Up"></td>
+        </tr>
+      </table>
+    </form>
   </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-</div>
-</div>
-<!--<?php include('comman/footer.php');?>--->
+</div><br>
+
+
+<?php include('comman/footer.php');?>
 </body>
 </html>
+
+<?php
+if(isset($_POST['signup']))
+{
+  extract($_POST);
+  include('comman/connect.php');
+
+  $query1 = "SELECT * FROM `registration` WHERE `Email` = '$email'";
+  $result1 = mysqli_query($con,$query1);
+  if($result1->num_rows==0){
+      if($password1!=$password2){
+        ?>
+
+          <script type="text/javascript">
+          document.getElementById('msg').innerHTML="Password and Confirm Password not match";
+          msg.style.padding = "20px";
+          msg.style.color = "white";
+          msg.style.background = "red";
+          msg.style.margin = "0px 0px 10px 0px";
+
+          </script>
+          <?php
+      }
+      else{
+        $password1 = password_hash($password1, PASSWORD_DEFAULT);
+        $password2 = password_hash($password2, PASSWORD_DEFAULT);
+          $sql="insert into registration values(default,'$name','$email','$mobile','','$password1','$password2','Admin','','','')";
+          $con->query($sql);
+          mysqli_close($con);
+          echo "<script>alert('Registration Successful')</script>";
+          echo '<script language="javascript">window.location="SignIn.php";</script>';
+          ?>
+          <script type="text/javascript">
+          document.getElementById('msg').innerHTML="Register Admin Successfully";
+          msg.style.padding = "20px";
+          msg.style.color = "white";
+          msg.style.background = "green";
+          msg.style.margin = "0px 0px 10px 0px";
+
+          </script>
+          <?php
+      }
+  }
+  else{
+    ?>
+    <script type="text/javascript">
+  document.getElementById('msg').innerHTML="Your email already exist";
+  msg.style.padding = "20px";
+  msg.style.color = "white";
+  msg.style.background = "red";
+  msg.style.margin = "0px 0px 10px 0px";
+
+   </script>
+   <?php
+  }
+  //header("location:news.php");
+ } ?>
