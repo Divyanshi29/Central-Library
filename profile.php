@@ -2,6 +2,13 @@
 include('comman/connect.php');
 include('include/main.php');
 include('include/header.php');
+if(isset($_SESSION['user'])){
+    $user_ses=$_SESSION['user'];
+}
+else
+{
+    echo"<script>window.location.href='SignIn.php';</script>";	
+}
 if(!$data['image'])
 {
 	if($data['Gender']=='M')
@@ -10,10 +17,8 @@ if(!$data['image'])
 		$pic='profile_f.jpg';
 }
 else
-	$pic=$data['pic'];
+	$pic=$data['image'];
 ?>
-
-<?php ?>
 <style type="text/css">
 #page_head
 {
@@ -210,11 +215,6 @@ else
 
 
 <script type="text/javascript" src="js/bootstrap.js"></script>
-
-<script>
-new WOW().init();
-</script>
-
 
 </body>
 </html>
