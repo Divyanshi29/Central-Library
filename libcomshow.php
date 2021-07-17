@@ -85,7 +85,7 @@ function dis2()
 						echo "<td><img src="."image/Library-Team/".$pic." width='100' height='100'></td>";
 						echo "<td align='center'>
 								<a href='usersedit.php?id=".$id."'><i class='fa fa-pencil'></i></a> | 
-								<a href='delete.php?id=".$id."&&tname=account1'><i class='fa fa-trash'></i></a>
+								<a href='delete.php?id=".$id."&&tname=library'><i class='fa fa-trash'></i></a>
 						</td>";
 					echo "</tr>";
 				}
