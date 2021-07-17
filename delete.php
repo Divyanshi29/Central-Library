@@ -4,29 +4,29 @@ $id=$_REQUEST['id'];
 
 include('comman/connect.php');
 
-if($name=="batch")
+if($name=="whrs")
 {
-	//mysql_query("delete from batch where bid='$id'");
+	$con->query("delete from librarytime where timeid='$id'");
 	//mysql_query("update batch set deleted='Delete' where bid='$id'");
-	header("location:batchshow.php");
+	header("location:whr.php");
 }
 
 if($name=="account1")
 {
-	 //$row=mysqli_fetch_array(mysql_query("select * from account1 where ac_id='$id'"));
-	// $pic=$row['pic'];
-	// mysql_query("delete from account1 where ac_id='$id'");
-	// unlink("user/$pic");
-	header("location:subscribeshow.php");
+	 $row=mysqli_fetch_array($con->query("select * from registration where userid='$id'"));
+	 $pic=$row['image'];
+	 $con->query("delete from registration where userid='$id'");
+	 unlink("user/$pic");
+	 header("location:showusers.php");
 }
 
-if($name=="assignment")
+if($name=="library")
 {
-	// $row=mysql_fetch_array(mysql_query("select * from assignment where asid='$id'"));
-	// $pic=$row['image'];
-	// mysql_query("delete from assignment where asid='$id'");
-	// unlink("assignment/$pic");
-	header("location:assignmentshow.php");
+	$row=mysql_fetch_array($con->query("select * from assignment where memberid='$id'"));
+	$pic=$row['pic'];
+	$con->query("delete from libraryteam where memberid='$id'");
+	unlink("image/Library-Team/$pic");
+	header("location:libcomshow.php");
 }
 
 if($name=="gallery")

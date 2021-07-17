@@ -67,7 +67,7 @@ $data=mysqli_fetch_array($con->query("select * from registration where email='$s
             echo "<td>".$row['daytime']."</td>";
             echo "<td align='center'>".$row['holidaytime']."</td>";
             echo "<td align='center'>".$row['date']."</td>";
-            echo "<td align='center'><a href='delete.php?id=".$id."&&tname=news'>Delete</a></td>";
+            echo "<td align='center'><a href='delete.php?id=".$id."&&tname=whrs'>Delete</a></td>";
           echo "</tr>";
         }
       ?>
