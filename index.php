@@ -146,7 +146,7 @@ include("include/header.php");
             onclick="window.location.href='Overlap.html';"
             class="viewbutton"
           >
-            Library Fine
+           <a href="overdue.html"> Library Fine</a>
           </button>
         </div>
       </div>
@@ -179,7 +179,7 @@ include("include/header.php");
             onclick="window.location.href='Overlap.html';"
             class="viewbutton"
           >
-            Thesis
+            <a href="Publications/index.html">Thesis</a>
           </button>
         </div>
       </div>
