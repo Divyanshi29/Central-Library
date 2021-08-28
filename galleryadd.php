@@ -95,6 +95,7 @@ if(isset($_POST['Upload']))
      $con->query("insert into gallery values(DEFAULT,'$imgname','$img')");
 	move_uploaded_file($_FILES['img']['tmp_name'], "gallery/".$img);
 	mysqli_close($con);
-	header("location:galleryadd.php");
+	//header("location:galleryadd.php");
+	echo"<script>window.location.href='galleryadd.php';</script>";
 }
 ?>
