@@ -122,7 +122,7 @@ include("include/header.php");
         <ul>
           <?php 
             include('comman/connect.php');
-            $res=$con->query("select * from news order by(nid) desc");
+            $res=$con->query("select * from news where deleted='' order by(nid) desc");
             while($row=mysqli_fetch_array($res))
             {
               echo "<li>".$row['news']."</li>";

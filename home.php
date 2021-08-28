@@ -63,7 +63,7 @@ $data=mysqli_fetch_array($result);
                 ?>
 			</div>
 			<div class="three">Users</div>
-			<div class="four"><b>BPC</b> Students (Passed Or Going)</div>
+			<div class="four"><b>Nit Jsr</b> Students (Passed Or Going)</div>
 			<div class="clear"></div>
 			</a>
 		</div>
