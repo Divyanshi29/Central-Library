@@ -187,6 +187,15 @@ else
 				<div class="status">
 					<a href="#"><i class="fa fa-file-text" aria-hidden="true"></i> LIBRARY FINE</a>
 				</div>
+				<div class="status">
+					<a href="upload_publication.php"><i class="fa fa-file-text" aria-hidden="true"></i> UPLOAD THESIS</a>
+				</div>
+				<div class="status">
+					<a href="#"><i class="fa fa-file-text" aria-hidden="true"></i> YOUR THESIS</a>
+				</div>
+				<div class="status">
+					<a href="#"><i class="fa fa-file-text" aria-hidden="true"></i> ALL THESIS</a>
+				</div>
 
 				<div class="status">
 					Status = <span style="color: blue;"><?php echo $data['Type'];?></span>
