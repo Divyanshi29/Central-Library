@@ -10,7 +10,7 @@
    function displayPaginationBelow($per_page,$page){
 	   $page_url="?";
       include('comman/connect.php');
-    	$query = "SELECT COUNT(*) as totalCount FROM libraryteam";
+    	$query = "SELECT COUNT(*) as totalCount FROM registration";
     	$rec = mysqli_fetch_array($con->query($query));
     	$total = $rec['totalCount'];
         $adjacents = "2"; 

@@ -12,8 +12,8 @@
 			<ul>
 				<li><a href=""><?php echo $data['Name'];?><i class="fa fa-angle-down"></i></a>
 					<ul>
-						<li><a href="changepsw.php">Change PSW</a></li>
-						<li><a href="setting.php">Setting</a></li>
+						<!--<li><a href="changepsw.php">Change PSW</a></li>
+						<li><a href="setting.php">Setting</a></li>-->
 						<li><a href="addadmin.php">Add Admin</a></li>
 						<li><a href="logout.php">Log Out</a></li>
 					</ul>
@@ -36,15 +36,15 @@
 						<li><a href="galleryshow.php">Show Gallery</a></li>
 					</ul>
 				</li>
-				<li><a href="">Services <i class="fa fa-angle-down"></i></a>
+				<!--<li><a href="">Services <i class="fa fa-angle-down"></i></a>
 					<ul>
 						<li><a href="galleryshow.php">Recommend a book</a></li>
 					</ul>
-				</li>
+				</li>-->
 				<li><a href="">Resources <i class="fa fa-angle-down"></i></a>
 					<ul>
-						<li><a href="galleryadd.php">E-textbooks</a></li>
-						<li><a href="galleryshow.php">Online Journals</a></li>
+						<!--<li><a href="galleryadd.php">E-textbooks</a></li>
+						<li><a href="galleryshow.php">Online Journals</a></li>-->
 						<li><a href="AdminNewsMagazines.php">Magzines</a></li>
 					</ul>
 				</li>

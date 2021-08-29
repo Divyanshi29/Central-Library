@@ -9,7 +9,7 @@ $data=mysqli_fetch_array($con->query("select * from registration where email='$s
 
 
 // --------- For Pagination ------
-	include_once "subscriber_function.php";
+	include_once "subscriber_function_user.php";
 
 	if(isset($_GET["page"])){
 		$page = (int)$_GET["page"];
@@ -20,7 +20,7 @@ $data=mysqli_fetch_array($con->query("select * from registration where email='$s
 	$i=0;
 	}
 
-	$setLimit = 30;
+	$setLimit = 10;
 	$pageLimit = ($page * $setLimit) - $setLimit;
 
 

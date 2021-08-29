@@ -20,7 +20,7 @@ $data=mysqli_fetch_array($con->query("select * from registration where email='$s
 	$i=0;
 	}
 
-	$setLimit = 15;
+	$setLimit = 10;
 	$pageLimit = ($page * $setLimit) - $setLimit;
 ?>
 <!DOCTYPE html>
@@ -89,7 +89,7 @@ function dis2()
 						</td>";
 					echo "</tr>";
 				}
-				echo "<tr>
+				    echo "<tr>
 						<td colspan='9'>
 						<div class='pagination'>".
 							displayPaginationBelow($setLimit,$page).

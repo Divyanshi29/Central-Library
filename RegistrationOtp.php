@@ -105,7 +105,7 @@ if(isset($_POST['send']))
                     <script>
                       document.getElementById('emailid').style.visibility = 'hidden';
                      document.getElementById('sendid').style.visibility = 'hidden';
-                      </script>
+                    </script>
                <?php }
             else {
                echo "<script>alert('Email Does Not Exists');</script>";
